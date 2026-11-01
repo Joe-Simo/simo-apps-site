@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Retention Guard</title>
+<meta name="description" content="Get help with Retention Guard for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/retention-guard.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="retention-guard.html"><img src="assets/retention-guard.svg" alt="" width="32" height="32">Retention Guard</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="retention-guard.html">Product</a></li>
+<li><a href="retention-guard-support.html" aria-current="page">Support</a></li>
+<li><a href="retention-guard-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Retention Guard support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is provided by email only. We aim to reply within 2 business days.</p>
+<p>When you write, please include your Freshdesk domain, what you expected, what happened, and a screenshot of the Retention Guard status page if possible. Never send your API key by email.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>Will the app delete tickets as soon as I install it?</summary>
+<p>No. Retention Guard starts in report-only mode and never changes anything until you run a complete dry-run report, click "Enable Move to Trash" and type MOVE TO TRASH.</p>
+</details>
+<details>
+<summary>Are tickets deleted permanently?</summary>
+<p>No. Tickets are moved to the Freshdesk Trash, where an admin can restore them until Freshdesk empties the Trash. The app never performs permanent deletion.</p>
+</details>
+<details>
+<summary>How do I protect a ticket?</summary>
+<p>Add the legal hold tag (default legal-hold) to the ticket. Tickets with that tag are never moved. You can also exclude tags, groups, statuses, and tickets younger than a minimum age.</p>
+</details>
+<details>
+<summary>What if someone edits or tags a ticket while the app is running?</summary>
+<p>Right before moving any ticket, the app reads it again from Freshdesk and re-applies every rule. A ticket that was reopened, tagged with the legal hold tag or an excluded tag, moved to an excluded group, or already deleted is left alone.</p>
+</details>
+<details>
+<summary>An audit entry says "unconfirmed". What does that mean?</summary>
+<p>Freshdesk did not confirm the move (for example a timeout). The ticket may or may not be in the Trash. The app checks it again on a later run; you can also look it up in the Trash.</p>
+</details>
+<details>
+<summary>The report says some tickets were skipped.</summary>
+<p>If more than 2,000 tickets share the exact same last-updated time (usually from a bulk import or bulk update), the app cannot page through that group safely and leaves all of them untouched. Updating any of those tickets gives it a new time and it is handled normally.</p>
+</details>
+<details>
+<summary>I changed a setting and the app went back to report-only. Why?</summary>
+<p>This is intentional. Any settings change requires a new dry-run report and a new confirmation before tickets are moved again.</p>
+</details>
+<details>
+<summary>How fast does it work?</summary>
+<p>The app runs every 5 minutes and moves at most 6 tickets per run (about 1,700 per day), staying well below Freshdesk API rate limits. Large backlogs are processed over several days, resuming exactly where the previous run stopped.</p>
+</details>
+<details>
+<summary>The status page shows "rate limit" or "paused".</summary>
+<p>Freshdesk asked the app to slow down, or the API key was rejected. The app waits and resumes automatically. If it reports an authentication problem, update the API key in the app settings.</p>
+</details>
+<details>
+<summary>Where can I see what was moved?</summary>
+<p>Open the Audit log section on the status page. You can download each page as CSV.</p>
+</details>
+<details>
+<summary>How do I stop it?</summary>
+<p>Click "Return to report-only" on the status page, or uninstall the app.</p>
+</details>
+<h2>Billing</h2>
+<p>21-day free trial, then $19/account/month, billed through the Freshworks Marketplace.</p>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="retention-guard-support.html" aria-current="page">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Retention Guard is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

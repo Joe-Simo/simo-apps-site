@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Bulk Update Pro">
+  <rect width="64" height="64" rx="12" fill="#2c5cc5"/>
+  <rect x="14" y="14" width="28" height="7" rx="2" fill="#fff"/>
+  <rect x="14" y="28" width="28" height="7" rx="2" fill="#fff"/>
+  <rect x="14" y="42" width="28" height="7" rx="2" fill="#fff"/>
+  <path d="M46 17.5l3 3 5-6M46 31.5l3 3 5-6M46 45.5l3 3 5-6" fill="none" stroke="#7fe0b8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

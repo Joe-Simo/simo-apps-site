@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Bulk Update Pro</title>
+<meta name="description" content="Get help with Bulk Update Pro for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/bulk-update-pro.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="bulk-update-pro.html"><img src="assets/bulk-update-pro.svg" alt="" width="32" height="32">Bulk Update Pro</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="bulk-update-pro.html">Product</a></li>
+<li><a href="bulk-update-pro-support.html" aria-current="page">Support</a></li>
+<li><a href="bulk-update-pro-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Bulk Update Pro support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the job number (for example j12) and a screenshot of the message you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>A name in my changes is "unknown" or "matches more than one".</summary>
+<p>Bulk Update Pro uses the labels from your Freshdesk ticket form, your group names and your agent names or emails. If two groups or agents share a name, use the agent's email, or rename one of the groups. If two custom fields share a label, use the field's API name (for example cf_region).</p>
+</details>
+<details>
+<summary>How do I clear a field?</summary>
+<p>Write (empty) as the value, for example "Region: (empty)" or "Agent: unassigned".</p>
+</details>
+<details>
+<summary>How fast does a job run?</summary>
+<p>About 8 tickets every 30 seconds while the app page is open, and 8 tickets every 5 minutes when it is closed. This keeps well under the Freshdesk API rate limits so your other apps and integrations keep working.</p>
+</details>
+<details>
+<summary>The job says it is waiting after a Freshdesk limit or error.</summary>
+<p>It continues automatically. After a rate limit it waits the time Freshdesk asks for. After an API key problem it waits 15 minutes; check that the API key in the app settings belongs to an active admin agent.</p>
+</details>
+<details>
+<summary>Some tickets show "Failed".</summary>
+<p>The log shows the reason Freshdesk gave, for example a required field that must be filled before a ticket can be closed. Other tickets in the job are not affected.</p>
+</details>
+<details>
+<summary>Some tickets show "Left as is".</summary>
+<p>Someone changed the ticket while the job was running, so Bulk Update Pro did not overwrite their change.</p>
+</details>
+<details>
+<summary>Undo did not restore some fields.</summary>
+<p>Undo only restores a field if it still holds the value the job wrote. If your team changed it afterwards, their change is kept and the log lists the field as not restored. Undo can also fail on a ticket when your current form rules no longer allow the old values, for example a status that now requires a field to be filled.</p>
+</details>
+<details>
+<summary>Can I pick tickets by a filter instead of pasting numbers?</summary>
+<p>Not yet. Export the ticket numbers from a Freshdesk ticket view and paste them.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html" aria-current="page">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Bulk Update Pro is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Retention Guard</title>
+<meta name="description" content="What data Retention Guard for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/retention-guard.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="retention-guard.html"><img src="assets/retention-guard.svg" alt="" width="32" height="32">Retention Guard</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="retention-guard.html">Product</a></li>
+<li><a href="retention-guard-support.html">Support</a></li>
+<li><a href="retention-guard-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Retention Guard privacy policy</h1>
+<p class="meta">Last updated: October 28, 2026</p>
+<p>This policy explains what data the Retention Guard app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>We do not store ticket subjects, ticket content, attachments or contact details.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, retention period, statuses in scope, legal hold tag, excluded tags, excluded group IDs and minimum ticket age. These are stored by Freshworks as installation parameters.</li>
+<li><strong>Freshdesk API key.</strong> The API key you enter is stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Ticket metadata read from your helpdesk.</strong> To decide whether a ticket is in scope, the app reads ticket ID, status, tags, group ID, created time and updated time through the Freshdesk API. This happens inside the Freshworks serverless environment.</li>
+<li><strong>App state and audit log.</strong> The app stores its progress cursor, run status, report counts and an audit log in the Freshworks app key-value store attached to your installation. Each audit entry contains only the ticket ID, status, group ID, created and updated timestamps, the time the ticket was moved to Trash, whether the action was scheduled or started manually, and whether Freshdesk confirmed the move. The newest 30,000 entries are kept.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>Only when you explicitly enable Move to Trash, the app moves in-scope tickets to the Freshdesk Trash. It never deletes tickets permanently. Tickets in Trash can be restored by a Freshdesk admin until Freshdesk empties the Trash.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. The status page uses the Freshworks Crayons user interface components, which are bundled inside the app package, so no external scripts, fonts or icons are downloaded at runtime.</p>
+<h2>Retention and deletion</h2>
+<p>App state and the audit log stay in your installation until you uninstall the app. When the app is uninstalled, Freshworks removes the installation parameters and the app's key-value data according to the Freshworks platform policies. Download the audit log as CSV before uninstalling if you need to keep it.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app's status page follows your Freshdesk agent permissions.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="retention-guard-privacy.html" aria-current="page">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Retention Guard is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
