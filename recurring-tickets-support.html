@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Recurring Tickets</title>
+<meta name="description" content="Get help with Recurring Tickets for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/recurring-tickets.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="recurring-tickets.html"><img src="assets/recurring-tickets.svg" alt="" width="32" height="32">Recurring Tickets</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="recurring-tickets.html">Product</a></li>
+<li><a href="recurring-tickets-support.html" aria-current="page">Support</a></li>
+<li><a href="recurring-tickets-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Recurring Tickets support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the template name and a screenshot of the message you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>How close to the scheduled time is a ticket created?</summary>
+<p>The app checks every 5 minutes for templates that are due, so a ticket is normally created within 5 minutes after its time. If many templates are due at the same moment, up to 8 are handled per check and the rest follow on the next checks.</p>
+</details>
+<details>
+<summary>Which time zone is used?</summary>
+<p>Each template has its own time zone. A new template starts with your Freshdesk account time zone, and you can type any time zone name such as Europe/London. The template list shows times in the account time zone.</p>
+</details>
+<details>
+<summary>What happens on the 31st in a month with 30 days?</summary>
+<p>A monthly template on a day the month does not have runs on that month's last day. To always use the last day, choose "Last day".</p>
+</details>
+<details>
+<summary>What do {{date}} and the other placeholders produce?</summary>
+<p>{{date}} gives the date of the occurrence like 2026-11-16, {{weekday}} the day name, {{day}} the day number, {{month}} the month name, {{year}} the year and {{time}} the scheduled time like 09:00. They work in the subject and description.</p>
+</details>
+<details>
+<summary>Does Run now change the schedule?</summary>
+<p>No. Run now creates one ticket at once and the next scheduled ticket stays as shown.</p>
+</details>
+<details>
+<summary>I paused a template. Will the missed tickets be created when I resume?</summary>
+<p>No. Resuming continues with the next scheduled time. Nothing missed while paused is created.</p>
+</details>
+<details>
+<summary>A run shows "Failed".</summary>
+<p>The history shows the reason Freshdesk gave, for example a group or agent that no longer exists, or a custom field that needs a different value. Edit the template, fix the field and use Run now to test it.</p>
+</details>
+<details>
+<summary>A run shows "Not confirmed".</summary>
+<p>Freshdesk did not answer clearly twice, and the app could not find the ticket among the requester's recent tickets. It skipped that occurrence instead of risking a duplicate. Check the requester's tickets in Freshdesk.</p>
+</details>
+<details>
+<summary>The page says the API key was rejected.</summary>
+<p>Ticket creation is paused for 30 minutes after an API key error. Update the API key in the app settings with the key of an active admin agent.</p>
+</details>
+<details>
+<summary>Will the requester get an email?</summary>
+<p>Freshdesk treats the ticket like any new ticket, so your Freshdesk email notification settings decide whether the requester is notified. Many teams use an internal address as the requester for recurring tasks.</p>
+</details>
+<details>
+<summary>How many templates can I have?</summary>
+<p>Up to 100 per Freshdesk account.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html" aria-current="page">Recurring Tickets support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Recurring Tickets is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Recurring Tickets</title>
+<meta name="description" content="What data Recurring Tickets for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/recurring-tickets.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="recurring-tickets.html"><img src="assets/recurring-tickets.svg" alt="" width="32" height="32">Recurring Tickets</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="recurring-tickets.html">Product</a></li>
+<li><a href="recurring-tickets-support.html">Support</a></li>
+<li><a href="recurring-tickets-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Recurring Tickets privacy policy</h1>
+<p class="meta">Last updated: November 8, 2026</p>
+<p>This policy explains what data the Recurring Tickets app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app stores only the templates you create and a log of the tickets it created.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Templates.</strong> In the Freshworks app key-value store attached to your installation, the app keeps each template you save: its name, schedule, time zone, and the ticket fields you entered (subject, description, requester email, CC addresses, group, agent, priority, status, type, tags and custom field values). It also keeps the time zone setting read from your Freshdesk account and, per template, the 10 most recent runs.</li>
+<li><strong>Run log.</strong> In Freshworks entity storage attached to your installation, the app writes one record per run: the template number and name, the result, whether it was scheduled or started with Run now, the occurrence date and time, the ticket number and any error message from Freshdesk. The oldest records are deleted when the log passes 9,000 records.</li>
+<li><strong>Data read from your helpdesk.</strong> To fill the template form, the app reads your account time zone, ticket field definitions, group names and agent names and emails. To confirm that a ticket was created after an unclear response, it reads the requester's 30 most recent tickets and compares their subject and creation time. This happens inside the Freshworks serverless environment and none of it is stored.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>The app only creates tickets, from the templates you save, at the times you schedule or when you click Run now. It does not edit or delete existing tickets.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>Templates stay in your installation until you delete them or uninstall the app. Run log records stay until they are pruned as described above or the app is uninstalled. Deleting a template does not delete the tickets it created. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html" aria-current="page">Recurring Tickets privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Recurring Tickets is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
