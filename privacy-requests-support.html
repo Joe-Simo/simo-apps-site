@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Privacy Requests</title>
+<meta name="description" content="Get help with Privacy Requests for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/privacy-requests.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="privacy-requests.html"><img src="assets/privacy-requests.svg" alt="" width="32" height="32">Privacy Requests</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="privacy-requests.html">Product</a></li>
+<li><a href="privacy-requests-support.html" aria-current="page">Support</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Privacy Requests support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, which tab you were on and a screenshot of the message you see. Never send your API key, and do not send the personal data of the people in your requests.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>What is in the export?</summary>
+<p>One JSON file with the contact's profile (name, emails, phone, address, job title, company, tags, custom fields and dates), every ticket they requested (subject, status, priority, type, dates, description, tags, custom fields) and the conversations on those tickets. Private notes are left out unless you tick "Include private notes". The file is downloaded to your computer; the app does not send it anywhere.</p>
+</details>
+<details>
+<summary>How large can an export be?</summary>
+<p>Up to 5,000 tickets and 300 conversations per ticket. Large exports take a few minutes because Freshdesk limits API calls per minute.</p>
+</details>
+<details>
+<summary>What does Erase permanently do?</summary>
+<p>It permanently deletes the contact and all the tickets they requested, using Freshdesk's permanent delete. It cannot be undone. You must type a request reference and the contact's email before the button works, and the app checks the email again in Freshdesk before deleting. Download the export first if you need to send it to the person.</p>
+</details>
+<details>
+<summary>What is the difference between Delete and Erase permanently for inactive contacts?</summary>
+<p>Delete moves the contact to Deleted contacts in Freshdesk, where an admin can restore it, and leaves their tickets in place. Erase permanently deletes the contact and all their tickets.</p>
+</details>
+<details>
+<summary>Which contacts count as inactive?</summary>
+<p>Contacts that were not updated since the cutoff and have no ticket updated since the cutoff. The cutoff is the number of months you choose before today. Agents and contacts with your keep tag are always left out.</p>
+</details>
+<details>
+<summary>Why do I see at most 300 contacts?</summary>
+<p>Freshdesk's contact search returns up to 300 results per search. Remove the ones you want, then click "Find inactive contacts" again to see the next ones.</p>
+</details>
+<details>
+<summary>Does the app remove anything on its own?</summary>
+<p>No. Nothing runs automatically. Contacts are removed only when an admin selects them and confirms, and each one is checked again right before removal.</p>
+</details>
+<details>
+<summary>What is in the log?</summary>
+<p>The time, whether it was a privacy request or an inactive cleanup, the action, the contact number, the number of tickets, your reference and the admin who did it. Names and emails of removed people are not kept. The newest 200 entries are kept.</p>
+</details>
+<details>
+<summary>I see "rate limit reached (429)".</summary>
+<p>Freshdesk limits API calls per minute (50 on trial accounts). Wait a minute and continue.</p>
+</details>
+<details>
+<summary>I see "rejected the API key (401)" or "does not have permission (403)".</summary>
+<p>Update the app settings with the API key of an active admin agent.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html" aria-current="page">Privacy Requests support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Privacy Requests is an independent app for Freshdesk by Joe Simo. Freshdesk and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
