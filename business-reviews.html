@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Reviews for Freshdesk: Google Business Profile reviews as tickets</title>
+<meta name="description" content="Business Reviews turns Google reviews of your business locations into Freshdesk tickets every hour and posts agent replies back to Google as the owner reply.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/business-reviews.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="business-reviews.html"><img src="assets/business-reviews.svg" alt="" width="32" height="32">Business Reviews</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="business-reviews.html" aria-current="page">Product</a></li>
+<li><a href="business-reviews-support.html">Support</a></li>
+<li><a href="business-reviews-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">Google reviews as Freshdesk tickets</h1>
+<p class="lead">Business Reviews brings the Google reviews of your business locations into Freshdesk, so your team can triage and answer them next to every other customer conversation, and post the owner reply without leaving the ticket.</p>
+<div class="actions">
+<!-- Add the Freshworks Marketplace listing link here once the app is published. -->
+<a class="button primary" href="business-reviews-support.html">Setup guide and help</a>
+<a class="button secondary" href="business-reviews-privacy.html">Read the privacy policy</a>
+</div>
+</section>
+
+<section aria-labelledby="features-title">
+<h2 id="features-title">Every review, one ticket</h2>
+<ul class="grid">
+<li class="card"><h3>Hourly import</h3><p>Every hour the app checks each location you pick and creates one ticket per new review, with the location, rating, reviewer name, text, any current owner reply and a link to the review on Google.</p></li>
+<li class="card"><h3>Ready for views and SLAs</h3><p>Tickets are tagged gbp, stars:1 to stars:5 and location:ID, and 1 and 2 star reviews get high priority.</p></li>
+<li class="card"><h3>Reply from the ticket</h3><p>Send a public reply on a review ticket and the app posts it on Google as the owner reply, then adds a private note with the result.</p></li>
+<li class="card"><h3>Live byte counter</h3><p>The ticket sidebar shows the review, the current owner reply and a counter against Google's 4096 byte limit. Agents can also post a draft from the sidebar.</p></li>
+<li class="card"><h3>Edits and rejected replies</h3><p>When a reviewer changes a review, the app adds a private note to the same ticket. When Google rejects an owner reply, a note gives the reason Google reports.</p></li>
+<li class="card"><h3>Pick your locations</h3><p>Sign in with Google, load your Business Profile locations and tick up to 10. Each review becomes exactly one ticket, even across runs.</p></li>
+</ul>
+</section>
+
+<section aria-labelledby="how-title">
+<h2 id="how-title">How it works</h2>
+<ol class="steps">
+<li>Get Business Profile API access for your own Google Cloud project and create an OAuth client. The <a href="business-reviews-support.html">setup guide</a> covers each step.</li>
+<li>Install Business Reviews from the Freshworks Marketplace, sign in with Google, enter your Freshdesk domain and an admin API key, and pick your locations.</li>
+<li>Reviews from the last 14 days arrive as tickets within the hour. Answer with a public reply and a private note confirms whether Google accepted it.</li>
+</ol>
+<p class="prose">Google must approve your Cloud project for Business Profile API access before any app can read reviews. Google asks for a profile verified and active for 60 days or more, with a website. Each run creates at most 15 new tickets; the rest come in on the next run.</p>
+</section>
+
+<section aria-labelledby="privacy-title">
+<h2 id="privacy-title">Private by design</h2>
+<p class="prose">Business Reviews runs entirely on the Freshworks platform and uses your own Google Cloud project and OAuth client. Your Freshdesk API key is stored as an encrypted installation parameter. The app talks only to Google's Business Profile APIs and your own Freshdesk. There is no outside server and no tracking. <a href="business-reviews-privacy.html">Read the full privacy policy</a>.</p>
+</section>
+
+<section aria-labelledby="price-title">
+<h2 id="price-title">Pricing</h2>
+<div class="price">
+<p><strong>$29</strong> per account per month, for any number of agents and up to 10 locations</p>
+<p>Billed through the Freshworks Marketplace.</p>
+</div>
+</section>
+
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html" aria-current="page">Business Reviews</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Business Reviews is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Business Reviews</title>
+<meta name="description" content="What data Business Reviews for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/business-reviews.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="business-reviews.html"><img src="assets/business-reviews.svg" alt="" width="32" height="32">Business Reviews</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="business-reviews.html">Product</a></li>
+<li><a href="business-reviews-support.html">Support</a></li>
+<li><a href="business-reviews-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Business Reviews privacy policy</h1>
+<p class="meta">Last updated: November 11, 2026</p>
+<p>This policy explains what data the Business Reviews app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>The app exchanges data only with your own Freshdesk account and Google's Business Profile APIs, using the credentials you provide.</li>
+<li>We do not sell or share your data with anyone else.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain and the Google Business Profile locations you pick (account and location IDs), stored by Freshworks as installation parameters.</li>
+<li><strong>Credentials.</strong> Your Freshdesk API key, your Google OAuth client ID and client secret, and the Google access and refresh tokens from your sign-in, stored by Freshworks: the API key as a secure (encrypted) installation parameter, and the Google tokens by the Freshworks OAuth service. They are used only to call the matching service for your own accounts and are never shown in the app or written to logs.</li>
+<li><strong>Reviews.</strong> Public Google reviews of your locations: rating, reviewer display name, review text, number of photos or videos, dates, review link and any current owner reply with its status. The app writes them into Freshdesk tickets; it does not keep a separate copy.</li>
+<li><strong>Sync records.</strong> In the Freshworks app key-value store attached to your installation: for each imported review, a one-way hash of the location and review ID with the ticket number and change state; for each review ticket, the location and review ID; a sync position per location; and a summary of the last run with counts and error codes but no review text. A bounded index keeps roughly the newest 2,000 reviews.</li>
+<li><strong>Replies.</strong> The text of public agent replies on review tickets, and drafts posted from the sidebar, sent to Google as your owner reply.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>The app creates one ticket per new review and adds private notes for edited reviews, rejected replies and reply results. It posts owner replies on Google only when an agent sends a public reply or posts from the sidebar on a review ticket. It does not delete tickets, reviews or replies.</p>
+<h2>Third parties</h2>
+<p>Google LLC receives the requests needed to list your locations and reviews and to post your replies, under your own Google account, your own Google Cloud project and Google's privacy policy. No other third party receives data. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>Tickets and notes stay in Freshdesk like any other ticket. Sync records stay in your installation until you uninstall the app, after which Freshworks removes the installation parameters and stored data according to the Freshworks platform policies. You can also revoke the app's Google access at any time in your Google Account under third-party connections.</p>
+<h2>Security</h2>
+<p>All requests use HTTPS and are made by the Freshworks platform. The Freshdesk API key is stored encrypted by Freshworks, and Google tokens are held by the Freshworks OAuth service, not by the app's code.</p>
+<h2>Your rights</h2>
+<p>Because the app keeps no personal data outside your Freshworks account and Google, requests about personal data should be handled in Freshdesk or with Google. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html" aria-current="page">Business Reviews privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Business Reviews is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
