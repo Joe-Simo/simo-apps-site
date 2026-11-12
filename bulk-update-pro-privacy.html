@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Bulk Update Pro privacy policy</h1>
-<p class="meta">Last updated: October 28, 2026</p>
+<p class="meta">Last updated: November 12, 2026</p>
 <p>This policy explains what data the Bulk Update Pro app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -43,7 +43,7 @@
 <li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Ticket data read from your helpdesk.</strong> To preview and apply changes, the app reads tickets you list through the Freshdesk API, together with your ticket field definitions, group names and agent names and emails. The preview shows up to 5 ticket subjects. This happens inside the Freshworks serverless environment, and subjects, names and emails are not stored.</li>
-<li><strong>Jobs and change log.</strong> In the Freshworks app key-value store attached to your installation, the app keeps the ticket numbers of each job, the changes you requested, and one log entry per ticket: the ticket number, the result, the previous and new values of the fields the job changed (these can include agent and group IDs, tags and the values of custom fields you chose to change) and any error message from Freshdesk. The 9 most recent jobs are listed; storage of older jobs is reused and overwritten by new jobs.</li>
+<li><strong>Jobs and change log.</strong> In the Freshworks app key-value store attached to your installation, the app keeps the ticket numbers of each job, the changes you requested, and one log entry per ticket: the ticket number, the result, the previous and new values of the fields the job changed (these can include agent and group IDs, tags and the values of custom fields you chose to change) and any error message from Freshdesk. For each job the app also keeps the display names of the agents, groups and statuses involved and the labels of the fields it changes, so the log shows names instead of IDs. The 9 most recent jobs are listed; storage of older jobs is reused and overwritten by new jobs.</li>
 </ol>
 <h2>What the app changes</h2>
 <p>The app only changes the tickets and fields you list, and only after you start a job from its preview. Undo changes the same tickets back.</p>
