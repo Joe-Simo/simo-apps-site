@@ -40,7 +40,7 @@
 </ul>
 <h2>Data the app processes</h2>
 <ol>
-<li><strong>Installation settings.</strong> Your Freshdesk domain and the Google Business Profile locations you pick (account and location IDs), stored by Freshworks as installation parameters.</li>
+<li><strong>Installation settings.</strong> Your Freshdesk domain and the Google Business Profile locations you pick (account and location IDs, plus each picked location's name and city as Google lists them, so tickets show the business name), stored by Freshworks as installation parameters.</li>
 <li><strong>Credentials.</strong> Your Freshdesk API key, your Google OAuth client ID and client secret, and the Google access and refresh tokens from your sign-in, stored by Freshworks: the API key as a secure (encrypted) installation parameter, and the Google tokens by the Freshworks OAuth service. They are used only to call the matching service for your own accounts and are never shown in the app or written to logs.</li>
 <li><strong>Reviews.</strong> Public Google reviews of your locations: rating, reviewer display name, review text, number of photos or videos, dates, review link and any current owner reply with its status. The app writes them into Freshdesk tickets; it does not keep a separate copy.</li>
 <li><strong>Sync records.</strong> In the Freshworks app key-value store attached to your installation: for each imported review, a one-way hash of the location and review ID with the ticket number and change state; for each review ticket, the location and review ID; a sync position per location; and a summary of the last run with counts and error codes but no review text. A bounded index keeps roughly the newest 2,000 reviews.</li>
