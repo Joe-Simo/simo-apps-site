@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Ticket Snooze</title>
+<meta name="description" content="What data Ticket Snooze for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/ticket-snooze.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="ticket-snooze.html"><img src="assets/ticket-snooze.svg" alt="" width="32" height="32">Ticket Snooze</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="ticket-snooze.html">Product</a></li>
+<li><a href="ticket-snooze-support.html">Support</a></li>
+<li><a href="ticket-snooze-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Ticket Snooze privacy policy</h1>
+<p class="meta">Last updated: November 13, 2026</p>
+<p>This policy explains what data the Ticket Snooze app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app stores only its settings and one short record for each ticket that is snoozed right now.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: the snooze status, wake status and tag, and whether the snooze note, wake note and assignee alert are on.</li>
+<li><strong>Snooze records.</strong> In the same key-value store, for each snoozed ticket: the ticket number, the wake time, the status before the snooze, the snooze status and tag, the optional note the agent typed (up to 500 characters), the id and name of the agent who snoozed it, when it was snoozed and how many wake attempts failed. No customer contact data is stored.</li>
+<li><strong>Data read from your helpdesk.</strong> To snooze and wake a ticket, the app reads its status, tags and assigned agent. When the app is installed, it reads the profile of the agent whose API key you entered, only to check that the key works. None of this is stored apart from the record above.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>When an agent snoozes a ticket, the app sets the snooze status, adds the tag and, when the setting is on, adds a private note with the wake time. At the wake time the app sets the wake status, removes the tag and, when the setting is on, adds a private note that can email the assigned agent. When an agent cancels a snooze or wakes a ticket early, the app puts back the status the ticket had before the snooze (for a cancel, only if the ticket is still in the snooze status) and removes the tag. The app does not reply to customers and does not close or delete tickets.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. Wake times are scheduled with the Freshworks scheduling service. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>A snooze record is removed when the ticket wakes, when the snooze is cancelled, when the ticket is deleted or no longer in the snooze status at the wake time, or after 5 failed wake attempts. Settings stay until you uninstall the app. Private notes added by the app stay on the tickets like any other note. When the app is uninstalled, it removes its background schedule, and Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Access to the app follows your Freshdesk agent permissions.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html" aria-current="page">Ticket Snooze privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Ticket Snooze is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

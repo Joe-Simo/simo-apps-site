@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Ticket Snooze</title>
+<meta name="description" content="Get help with Ticket Snooze for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/ticket-snooze.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="ticket-snooze.html"><img src="assets/ticket-snooze.svg" alt="" width="32" height="32">Ticket Snooze</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="ticket-snooze.html">Product</a></li>
+<li><a href="ticket-snooze-support.html" aria-current="page">Support</a></li>
+<li><a href="ticket-snooze-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Ticket Snooze support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the ticket number, the wake time you picked and a screenshot of the message you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>What happens when a ticket wakes?</summary>
+<p>At the wake time the app reads the ticket again. If it is still in your snooze status, the app sets the wake status (Open by default), removes the snooze tag and adds a private note. When the assignee alert is on, the note also emails the assigned agent.</p>
+</details>
+<details>
+<summary>What if the customer replies while the ticket is snoozed?</summary>
+<p>Freshdesk usually moves the ticket back to Open on a customer reply. The app sees that the ticket is no longer in the snooze status, leaves it alone and drops the snooze. Nothing is reopened twice.</p>
+</details>
+<details>
+<summary>How soon and how far ahead can I snooze?</summary>
+<p>The soonest wake time is 5 minutes ahead and the latest is one year ahead. These are limits of the Freshworks scheduling service. You can snooze up to 500 tickets at the same time per helpdesk.</p>
+</details>
+<details>
+<summary>Which time zone is the wake time in?</summary>
+<p>The sidebar shows the wake time in your browser's local time. The app stores it in UTC, so agents in other time zones see the same moment in their own local time.</p>
+</details>
+<details>
+<summary>Do SLA timers stop while a ticket sleeps?</summary>
+<p>Only if the snooze status has the SLA timer turned off. Pending pauses the SLA timer in most helpdesks. You can also add a custom status such as "Snoozed" in Admin &gt; Ticket Fields &gt; Status with the SLA timer off, then enter its id on the Ticket Snooze admin page.</p>
+</details>
+<details>
+<summary>How do I end a snooze early?</summary>
+<p>In the Ticket Snooze sidebar on the ticket, select Wake now to put the ticket back in the status it had before the snooze and remove the tag. Cancel and restore does the same if the ticket is still in the snooze status, and otherwise only ends the snooze. On the admin page, select Wake now next to any snoozed ticket.</p>
+</details>
+<details>
+<summary>A ticket did not wake on time.</summary>
+<p>If Freshdesk is busy or the request fails, a background check every 10 minutes tries again, up to 5 times. If it still does not wake, check that the API key in the app settings belongs to an active admin agent, and email us with the ticket number.</p>
+</details>
+<details>
+<summary>Who can change the settings?</summary>
+<p>Anyone who can open Ticket Snooze from the apps menu can change the snooze status, wake status, tag and note settings. Limit access to the app in Freshdesk if only admins should do that.</p>
+</details>
+<details>
+<summary>The sidebar shows an error.</summary>
+<p>Reload the ticket. If it continues, check that the API key in the app settings belongs to an active admin agent, and email us with a screenshot.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html" aria-current="page">Ticket Snooze support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Ticket Snooze is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

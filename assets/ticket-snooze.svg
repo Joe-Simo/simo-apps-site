@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ticket Snooze">
+  <rect width="64" height="64" rx="14" fill="#1f4b8f"/>
+  <path fill="#f4e8c1" d="M40.5 14.5c-2.4 4.8-2.2 11.2 1.4 16.2 3.5 4.8 9.4 7 15.1 6.3-1.8 8.8-9.8 15.5-19.3 15.5-10.8 0-19.5-8.5-19.5-19 0-9.8 7.5-17.8 17.1-18.9 1.9 2.2 3.7 2.8 5.2-.1z"/>
+  <circle cx="24" cy="42" r="12" fill="#fff" stroke="#1f4b8f" stroke-width="2"/>
+  <path fill="none" stroke="#1f4b8f" stroke-width="2" stroke-linecap="round" d="M24 36.5v6.2l4 2.4"/>
+</svg>
