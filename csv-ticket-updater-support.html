@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: CSV Ticket Updater</title>
+<meta name="description" content="Get help with CSV Ticket Updater for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/csv-ticket-updater.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="csv-ticket-updater.html"><img src="assets/csv-ticket-updater.svg" alt="" width="32" height="32">CSV Ticket Updater</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="csv-ticket-updater.html">Product</a></li>
+<li><a href="csv-ticket-updater-support.html" aria-current="page">Support</a></li>
+<li><a href="csv-ticket-updater-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>CSV Ticket Updater support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the job number (for example j12), the CSV row number and a screenshot of the message you see. Never send your API key, and do not send the whole CSV unless we ask for it.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>What should my CSV look like?</summary>
+<p>The first row is the header. The first column, or a column named Ticket ID, holds the ticket number. Every other column is a ticket field named as in Freshdesk, for example Status, Priority, Group, Agent or a custom field label. Click "Download sample CSV" in the app to get a header built from your own fields.</p>
+</details>
+<details>
+<summary>A column is "unknown".</summary>
+<p>CSV Ticket Updater uses the labels from your Freshdesk ticket form. Check the spelling in the header row. Upper and lower case do not matter. The supported default columns are Status, Priority, Type, Group, Agent, Add tags and Remove tags.</p>
+</details>
+<details>
+<summary>Some rows are listed under "Rows with problems".</summary>
+<p>Each problem shows the CSV row number and the reason, for example a dropdown value that is not one of the choices, an agent email that does not match an agent, or a ticket number that is not a number. Fix those rows and preview again, or tick "Skip these rows" to update only the rows without problems.</p>
+</details>
+<details>
+<summary>How do I leave a field alone, and how do I clear it?</summary>
+<p>An empty cell leaves that field as it is. Write (empty) in a cell to clear the field on that ticket.</p>
+</details>
+<details>
+<summary>How large can a file be?</summary>
+<p>Up to 5,000 rows and 2 MB per file. Split larger files into several jobs. One job runs at a time.</p>
+</details>
+<details>
+<summary>How fast does a job run?</summary>
+<p>About 8 tickets every 30 seconds while the app page is open, and 8 tickets every 5 minutes when it is closed. This keeps well under the Freshdesk API rate limits so your other apps and integrations keep working.</p>
+</details>
+<details>
+<summary>The job says it is waiting after a Freshdesk limit or error.</summary>
+<p>The job continues automatically. After a rate limit it waits the time Freshdesk asks for. After an API key problem it waits 15 minutes; check that the API key in the app settings belongs to an active admin agent.</p>
+</details>
+<details>
+<summary>Some tickets show "Failed" or "Not found".</summary>
+<p>The log shows the reason Freshdesk gave, for example a required field that must be filled before a ticket can be closed, or a ticket that was deleted. Other rows in the job are not affected.</p>
+</details>
+<details>
+<summary>Some tickets show "Left as is".</summary>
+<p>Someone changed the ticket while the job was running, so CSV Ticket Updater did not overwrite their change.</p>
+</details>
+<details>
+<summary>Undo did not restore some fields.</summary>
+<p>Undo only restores a field if it still holds the value the job wrote. If your team changed it afterwards, their change is kept and the log lists the field as not restored.</p>
+</details>
+<details>
+<summary>Why does the results CSV put a ' in front of some cells?</summary>
+<p>Cells that start with =, +, - or @ get a leading ' so a spreadsheet program does not run them as formulas.</p>
+</details>
+<details>
+<summary>How is this different from Bulk Update Pro?</summary>
+<p>Bulk Update Pro applies the same change to a list of tickets. CSV Ticket Updater applies a different change to each ticket from a spreadsheet. They work well side by side.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html" aria-current="page">CSV Ticket Updater support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>CSV Ticket Updater is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

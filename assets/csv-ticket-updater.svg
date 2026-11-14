@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="CSV Ticket Updater">
+  <rect width="64" height="64" rx="12" fill="#0f7a5c"/>
+  <rect x="12" y="12" width="40" height="40" rx="3" fill="#fff"/>
+  <path d="M12 25h40M12 38h40M26 12v40M39 12v40" stroke="#0f7a5c" stroke-width="2.5"/>
+  <path d="M30 31.5l3 3 5-6" fill="none" stroke="#2c5cc5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
