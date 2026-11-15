@@ -37,7 +37,7 @@
 <li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
 <li>We do not sell, share or transfer your data to any third party.</li>
 <li>The app only reads from your helpdesk. It never creates, changes or deletes a ticket.</li>
-<li>Exported ticket data is kept inside your own Freshworks installation for 7 days after an export finishes, then removed automatically.</li>
+<li>Exported ticket data is kept inside your own Freshworks installation so you can download it for 7 days after an export finishes. Every stored piece is removed automatically at the latest 15 days after it was stored.</li>
 </ul>
 <h2>Data the app processes</h2>
 <ol>
@@ -45,7 +45,7 @@
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Export settings.</strong> The filters you choose (date range, status, group, agent, type, tag) or the ticket IDs you paste, the file format and the private notes option, kept with each export in the Freshworks app key-value store attached to your installation.</li>
 <li><strong>Data read from your helpdesk.</strong> Through the Freshdesk API the app reads the tickets that match your export, their conversations (replies, private notes if you include them, forwards), the requester's name and email, and the names of your groups, agents, companies and ticket fields so the file shows names instead of numbers.</li>
-<li><strong>Exported ticket data.</strong> For each exported ticket the app stores a condensed copy (ticket fields, requester name and email, and every included message with sender, recipients, date, text body and attachment names) in the Freshworks entity storage attached to your installation, so the export can run in the background and you can download it. Attachment files themselves are not copied. Message bodies longer than 20,000 characters are cut.</li>
+<li><strong>Exported ticket data.</strong> For each exported ticket the app stores a condensed copy (ticket fields, requester name and email, and every included message with sender, recipients, date, text body and attachment names) in the Freshworks key-value storage attached to your installation, so the export can run in the background and you can download it. Attachment files themselves are not copied. Message bodies longer than 20,000 characters are cut.</li>
 <li><strong>Export status.</strong> Progress counts, the time of the last run and the last error message, kept in the app key-value store. The 10 most recent exports are listed.</li>
 </ol>
 <h2>Where the file is built</h2>
@@ -55,7 +55,7 @@
 <h2>Third parties and external resources</h2>
 <p>The app does not send data to any third party and makes no requests outside your Freshdesk account. The interface uses the Freshworks Crayons components, bundled inside the app package, so no external scripts, fonts or icons are downloaded at runtime. The HTML transcript contains no scripts and loads no remote content.</p>
 <h2>Retention and deletion</h2>
-<p>Exported ticket data is removed automatically 7 days after an export finishes or is cancelled. Download the file you need within that time. Export settings and status are kept until they are overwritten by newer exports or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<p>An export can be downloaded for 7 days after it finishes, then it leaves the export list. The stored ticket data has an expiry set when it is written and is removed automatically at the latest 15 days after it was stored, including data of cancelled exports. Download the file you need within the 7 days. Export settings and status are kept until they are overwritten by newer exports or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
 <p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
 <h2>Your rights</h2>
