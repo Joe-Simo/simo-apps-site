@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Ticket History Export">
+  <rect width="64" height="64" rx="12" fill="#2c5cc5"/>
+  <rect x="9" y="10" width="34" height="14" rx="4" fill="#fff"/>
+  <path d="M14 24l-1 6 7-6z" fill="#fff"/>
+  <path d="M14 15.5h24M14 19.5h16" stroke="#2c5cc5" stroke-width="2" stroke-linecap="round"/>
+  <rect x="17" y="30" width="30" height="13" rx="4" fill="#dbe5fb"/>
+  <path d="M42 43l1 5-6-5z" fill="#dbe5fb"/>
+  <path d="M22 35h20M22 38.5h12" stroke="#2c5cc5" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="47" cy="47" r="11" fill="#0f7a5c" stroke="#2c5cc5" stroke-width="2.5"/>
+  <path d="M47 41v11M42.5 48l4.5 4.5 4.5-4.5" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

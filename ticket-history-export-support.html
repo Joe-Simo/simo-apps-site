@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Ticket History Export</title>
+<meta name="description" content="Get help with Ticket History Export for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/ticket-history-export.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="ticket-history-export.html"><img src="assets/ticket-history-export.svg" alt="" width="32" height="32">Ticket History Export</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="ticket-history-export.html">Product</a></li>
+<li><a href="ticket-history-export-support.html" aria-current="page">Support</a></li>
+<li><a href="ticket-history-export-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Ticket History Export support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the export number shown under "Recent exports" and a screenshot of the message you see. Never send your API key, and do not send an exported file unless we ask for it.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>Which format should I pick?</summary>
+<p>CSV per message gives one row per message with the ticket columns repeated, which is best for filtering and analysis in a spreadsheet. CSV per ticket gives one row per ticket with the whole conversation in one cell. The HTML transcript is one readable page with every ticket and message, which you can open in any browser and print or save as PDF.</p>
+</details>
+<details>
+<summary>What is included?</summary>
+<p>For each ticket: a link, subject, status, priority, type, group, agent, requester name and email, company, tags, created and updated dates and your custom fields. Then every message in time order: the description, public replies, private notes and forwarded emails, with sender, recipients, CC, date, text and attachment names.</p>
+</details>
+<details>
+<summary>Can I leave out private notes?</summary>
+<p>Yes. Untick "Include private notes" before you start the export. Do this before sending an export to a customer.</p>
+</details>
+<details>
+<summary>How many tickets can one export hold?</summary>
+<p>Up to 5,000 tickets per export, whether they come from filters or pasted IDs. For more, split the date range into several exports. One export runs at a time.</p>
+</details>
+<details>
+<summary>How fast does an export run?</summary>
+<p>Each batch uses up to 12 Freshdesk API requests. With the page open, a batch runs about every 30 seconds; with it closed, every 5 minutes. A ticket with a short conversation takes about two requests, so a page left open exports roughly 10 tickets a minute. This keeps well under the Freshdesk API rate limits so your other apps and integrations keep working.</p>
+</details>
+<details>
+<summary>Some tickets show as failed.</summary>
+<p>A ticket that was deleted, or an ID that does not exist, is counted as failed and the export moves on.</p>
+</details>
+<details>
+<summary>Why are attachments not in the file?</summary>
+<p>The export lists attachment names with each message. The files stay in Freshdesk, where you can open them from the ticket link.</p>
+</details>
+<details>
+<summary>Are archived tickets included?</summary>
+<p>No. Freshdesk does not return archived tickets through the regular ticket API.</p>
+</details>
+<details>
+<summary>A message ends with a note that it was cut.</summary>
+<p>Bodies longer than 20,000 characters are cut so very long email threads still fit. The full message stays in Freshdesk.</p>
+</details>
+<details>
+<summary>How long can I download an export?</summary>
+<p>For 7 days after it finishes. After that the stored copy is removed automatically and you can start the export again.</p>
+</details>
+<details>
+<summary>The download says the link is no longer valid.</summary>
+<p>Click Download again to start over from the first page.</p>
+</details>
+<details>
+<summary>Why does the CSV put a ' in front of some cells?</summary>
+<p>Cells that start with =, +, - or @ get a leading ' so a spreadsheet program does not run them as formulas.</p>
+</details>
+<details>
+<summary>Does the app change my tickets?</summary>
+<p>No. It only reads tickets and conversations.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html" aria-current="page">Ticket History Export support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Ticket History Export is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

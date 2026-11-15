@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Ticket History Export</title>
+<meta name="description" content="What data Ticket History Export for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/ticket-history-export.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="ticket-history-export.html"><img src="assets/ticket-history-export.svg" alt="" width="32" height="32">Ticket History Export</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="ticket-history-export.html">Product</a></li>
+<li><a href="ticket-history-export-support.html">Support</a></li>
+<li><a href="ticket-history-export-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Ticket History Export privacy policy</h1>
+<p class="meta">Last updated: November 15, 2026</p>
+<p>This policy explains what data the Ticket History Export app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app only reads from your helpdesk. It never creates, changes or deletes a ticket.</li>
+<li>Exported ticket data is kept inside your own Freshworks installation for 7 days after an export finishes, then removed automatically.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Export settings.</strong> The filters you choose (date range, status, group, agent, type, tag) or the ticket IDs you paste, the file format and the private notes option, kept with each export in the Freshworks app key-value store attached to your installation.</li>
+<li><strong>Data read from your helpdesk.</strong> Through the Freshdesk API the app reads the tickets that match your export, their conversations (replies, private notes if you include them, forwards), the requester's name and email, and the names of your groups, agents, companies and ticket fields so the file shows names instead of numbers.</li>
+<li><strong>Exported ticket data.</strong> For each exported ticket the app stores a condensed copy (ticket fields, requester name and email, and every included message with sender, recipients, date, text body and attachment names) in the Freshworks entity storage attached to your installation, so the export can run in the background and you can download it. Attachment files themselves are not copied. Message bodies longer than 20,000 characters are cut.</li>
+<li><strong>Export status.</strong> Progress counts, the time of the last run and the last error message, kept in the app key-value store. The 10 most recent exports are listed.</li>
+</ol>
+<h2>Where the file is built</h2>
+<p>When you click Download, the stored export is sent to your browser and the CSV or HTML file is built there and saved on your computer. The file is not uploaded anywhere. Once downloaded, it is yours to protect: it can contain customer names, email addresses, ticket text and, if you chose to include them, private notes.</p>
+<h2>What the app changes</h2>
+<p>Nothing in your helpdesk. The app only uses read requests to the Freshdesk API.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. The interface uses the Freshworks Crayons components, bundled inside the app package, so no external scripts, fonts or icons are downloaded at runtime. The HTML transcript contains no scripts and loads no remote content.</p>
+<h2>Retention and deletion</h2>
+<p>Exported ticket data is removed automatically 7 days after an export finishes or is cancelled. Download the file you need within that time. Export settings and status are kept until they are overwritten by newer exports or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html" aria-current="page">Ticket History Export privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Ticket History Export is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
