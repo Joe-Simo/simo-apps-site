@@ -34,6 +34,14 @@
 <p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the job number (for example j12), the CSV row number and a screenshot of the message you see. Never send your API key, and do not send the whole CSV unless we ask for it.</p>
 <h2 id="faq">Frequently asked questions</h2>
 <details>
+<summary>Who can use the app, and why does it ask for my API key?</summary>
+<p>Only Freshdesk admins (the Account Administrator or Administrator role) can use CSV Ticket Updater. When you open it, paste your own API key from Profile settings &gt; View API key. The app asks Freshdesk who owns the key and checks your role on the server before it previews, starts, pauses or undoes anything. The key is used for that one check and is not stored. Your session lasts 30 minutes, and each job records the admin who started it. Other roles, including custom roles, are refused. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+</details>
+<details>
+<summary>I see "Only Freshdesk admins can use this app", "Your session ended" or "needs a fresh confirmation".</summary>
+<p>Sign in again with your own key as an admin. A job can only start from a preview made in the last 10 minutes by the same admin, and each preview starts one job; preview again if needed. Undo works the same way from the Undo button.</p>
+</details>
+<details>
 <summary>What should my CSV look like?</summary>
 <p>The first row is the header. The first column, or a column named Ticket ID, holds the ticket number. Every other column is a ticket field named as in Freshdesk, for example Status, Priority, Group, Agent or a custom field label. Click "Download sample CSV" in the app to get a header built from your own fields.</p>
 </details>

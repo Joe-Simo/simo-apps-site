@@ -34,6 +34,14 @@
 <p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, which tab you were on and a screenshot of the message you see. Never send your API key, and do not send the personal data of the people in your requests.</p>
 <h2 id="faq">Frequently asked questions</h2>
 <details>
+<summary>Who can use the app, and why does it ask for my API key?</summary>
+<p>Only Freshdesk admins (the Account Administrator or Administrator role) can use Privacy Requests. When you open it, paste your own API key from Profile settings &gt; View API key. The app asks Freshdesk who owns the key and checks your role on the server before it shows or changes anything. The key is used for that one check and is not stored. Your session lasts 30 minutes, and the log records the admin of the session. Other roles, including custom roles, are refused. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+</details>
+<details>
+<summary>Why do erase and remove need a second click?</summary>
+<p>Erasing a contact and removing inactive contacts take two clicks. The first click asks the server for a confirmation that is valid for 10 minutes, for you and for exactly the contacts you selected. The second click uses it once. If the list or the setting changes, start again.</p>
+</details>
+<details>
 <summary>What is in the export?</summary>
 <p>One JSON file with the contact's profile (name, emails, phone, address, job title, company, tags, custom fields and dates), every ticket they requested (subject, status, priority, type, dates, description, tags, custom fields) and the conversations on those tickets. Private notes are left out unless you tick "Include private notes". The file is downloaded to your computer; the app does not send it anywhere.</p>
 </details>
@@ -43,7 +51,7 @@
 </details>
 <details>
 <summary>What does Erase permanently do?</summary>
-<p>It permanently deletes the contact and all the tickets they requested, using Freshdesk's permanent delete. It cannot be undone. You must type a request reference and the contact's email before the button works, and the app checks the email again in Freshdesk before deleting. Download the export first if you need to send it to the person.</p>
+<p>It permanently deletes the contact and all the tickets they requested, using Freshdesk's permanent delete. It cannot be undone. You must type a request reference and the contact's email before the button works, the app checks the email again in Freshdesk, and you confirm with a second click. Download the export first if you need to send it to the person.</p>
 </details>
 <details>
 <summary>What is the difference between Delete and Erase permanently for inactive contacts?</summary>
@@ -72,6 +80,10 @@
 <details>
 <summary>I see "rejected the API key (401)" or "does not have permission (403)".</summary>
 <p>Update the app settings with the API key of an active admin agent.</p>
+</details>
+<details>
+<summary>I see "Only Freshdesk admins can use this app" or "Your session ended".</summary>
+<p>The key you pasted belongs to an agent without the Account Administrator or Administrator role, or your 30-minute session ended. Sign in again with your own key as an admin.</p>
 </details>
 </div>
 </main>

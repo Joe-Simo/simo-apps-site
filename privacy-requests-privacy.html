@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Privacy Requests privacy policy</h1>
-<p class="meta">Last updated: November 9, 2026</p>
+<p class="meta">Last updated: November 16, 2026</p>
 <p>This policy explains what data the Privacy Requests app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -43,8 +43,10 @@
 <li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: the number of months for the inactive rule, the keep tag and whether removals delete or erase.</li>
-<li><strong>Removal log.</strong> In the same store, up to 200 entries: the time, the kind of removal, the action, the contact number, the number of tickets, the reference typed by the admin, the cutoff date and the name of the admin who did it. The name and email of the removed person are not stored.</li>
+<li><strong>Removal log.</strong> In the same store, up to 200 entries: the time, the kind of removal, the action, the contact number, the number of tickets, the reference typed by the admin, the cutoff date and the name and agent number of the admin who did it, taken from the sign-in check. The name and email of the removed person are not stored.</li>
 <li><strong>Data read from your helpdesk.</strong> When an admin uses the app, it reads contacts (by email, or those not updated since the cutoff), the tickets and conversations of a contact, and the list of agents. This data is shown on screen or put in an export file that is downloaded to the admin's computer. It is not stored by the app.</li>
+<li><strong>Your own API key at sign-in.</strong> When an admin opens the app, they paste their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to learn who owns it and their role. The key is not stored, logged or returned to the page.</li>
+<li><strong>Sessions and confirmations.</strong> In the same key-value store, for up to 30 minutes: a random session code with the admin's agent number, name and email. For up to 10 minutes: one-time confirmation codes for an erase or a removal, with the admin's agent number and the contact numbers they cover. Both expire on their own.</li>
 </ol>
 <h2>What the app changes</h2>
 <p>The app deletes contacts only when an admin asks it to: a soft delete (restorable from Deleted contacts) or a permanent delete of the contact and their tickets. It does not edit tickets or contacts.</p>
@@ -53,7 +55,7 @@
 <h2>Retention and deletion</h2>
 <p>Settings and the log stay in your installation until the app is uninstalled. The log keeps the newest 200 entries. Export files are saved on the admin's computer and are the admin's responsibility. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app calls the API with the key entered at installation, so install it with an admin key and give access to the app only to people who handle privacy requests.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app calls the API with the key entered at installation. Before it shows or changes anything, it checks on the server that the person using it is a Freshdesk admin (see "Your own API key at sign-in" above). We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
 <h2>Your rights</h2>
 <p>The app is a tool for your team to carry out requests about personal data in your helpdesk. The decision whether to export or erase data stays with you. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>
