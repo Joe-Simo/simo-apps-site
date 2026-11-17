@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>CSV Ticket Creator privacy policy</h1>
-<p class="meta">Last updated: November 14, 2026</p>
+<p class="meta">Last updated: November 16, 2026</p>
 <p>This policy explains what data the CSV Ticket Creator app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -45,6 +45,8 @@
 <li><strong>The CSV you upload or paste.</strong> The file is read in your browser and sent to the app's serverless functions inside Freshworks to be checked. The app does not keep the file itself. When you start a job it keeps, per row, the CSV row number and the ticket it will create from that row: requester email, name or phone, subject, description or rendered email message, CC addresses, tags, company, due date, private note, the ticket field values in your file and any External ref.</li>
 <li><strong>Data read from your helpdesk.</strong> To check rows, the app reads your ticket field definitions, groups, agents, companies and support email addresses through the Freshdesk API. For undo it reads the conversations of the tickets the job created, only to check whether anyone replied. This happens inside the Freshworks serverless environment and is not stored.</li>
 <li><strong>Jobs and results log.</strong> In the Freshworks app key-value store attached to your installation, the app keeps one log entry per row: the CSV row number, the result, the ID of the ticket it created and any error message from Freshdesk. The 9 most recent jobs are listed; storage of older jobs, including their rows, is reused and overwritten by new jobs.</li>
+<li><strong>Your own API key at sign-in.</strong> When an admin opens the app, they paste their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to learn who owns it and their role. The key is not stored, logged or returned to the page.</li>
+<li><strong>Sessions, confirmations and job owners.</strong> In the same key-value store, for up to 30 minutes: a random session code with the admin's agent number, name and email. For up to 10 minutes: one-time confirmation codes for starting a job or an undo, with the admin's agent number. Each job keeps the agent number and name of the admin who started it and who last paused, resumed or cancelled it.</li>
 </ol>
 <h2>What the app changes</h2>
 <p>The app creates tickets, and the contacts Freshdesk adds for new requesters, only after you start a job from its preview. In email per row mode it sends one outbound email per row from the support address you pick. Undo moves the tickets a create job made to Trash, and only tickets with no reply.</p>
@@ -53,7 +55,7 @@
 <h2>Retention and deletion</h2>
 <p>Jobs, their rows and logs stay in your installation until they are overwritten by newer jobs or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's key-value data according to the Freshworks platform policies. Download any results CSV you need before uninstalling. Tickets and contacts the app created stay in your helpdesk like any other ticket.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Before it previews, creates, sends or undoes anything, the app checks on the server that the person using it is a Freshdesk admin (see "Your own API key at sign-in" above). We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

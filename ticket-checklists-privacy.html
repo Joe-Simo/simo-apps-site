@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Ticket Checklists privacy policy</h1>
-<p class="meta">Last updated: November 9, 2026</p>
+<p class="meta">Last updated: November 17, 2026</p>
 <p>This policy explains what data the Ticket Checklists app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -43,7 +43,9 @@
 <li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Checklists.</strong> In the Freshworks app key-value store attached to your installation, the app keeps each checklist you save: its name, items, which items are required, whether it blocks closing and its rule (ticket types, group numbers, priorities and tags). It also keeps the setting for the private note on completion.</li>
-<li><strong>Checklist progress on tickets.</strong> In the same key-value store, per ticket that has a checklist: the ticket number, the checklists on it, each item's text and whether it is done, the name of the agent who ticked it and the time, who added the checklist and when, and which checklists an agent removed.</li>
+<li><strong>Checklist progress on tickets.</strong> In the same key-value store, per ticket that has a checklist: the ticket number, the checklists on it, each item's text and whether it is done, the name of the signed-in agent who ticked it (taken from the verified session) and the time, who added the checklist and when, and which checklists an agent removed.</li>
+<li><strong>Your own API key at sign-in.</strong> Each agent signs in once per session with their own Freshdesk API key. The app sends it only to your Freshdesk domain to ask who owns it (agent id, name, email and roles), then discards it. The key is never stored, logged or shown again.</li>
+<li><strong>Sign-in sessions and confirmations.</strong> In the key-value store: a random session token with the agent's id, name, email and whether they are an admin, removed after 30 minutes or at sign-out, and single-use confirmation tokens for removing or deleting a checklist, removed after 10 minutes.</li>
 <li><strong>Data read from your helpdesk.</strong> To decide which checklists to add, the app reads the type, group, priority and tags of tickets when they are created or updated, or when an agent opens the ticket. To fill the admin form, it reads your ticket type choices and group names. None of this is stored apart from the rule values you choose.</li>
 </ol>
 <h2>What the app changes</h2>
@@ -53,7 +55,7 @@
 <h2>Retention and deletion</h2>
 <p>Checklists stay in your installation until you delete them or uninstall the app. Checklist progress on a ticket stays until the checklists are removed from that ticket or the app is uninstalled. Deleting a checklist on the admin page does not remove it from tickets that already have it. Private notes added by the app stay on the tickets like any other note. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered. Every server function that reads or changes checklists needs a verified sign-in session; the Close and Resolve check on the ticket page only reads whether required items are open. Checklists and settings can be changed only by Freshdesk admins, and removing or deleting a checklist needs a single-use confirmation issued by the server.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

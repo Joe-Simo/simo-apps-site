@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Ticket Snooze privacy policy</h1>
-<p class="meta">Last updated: November 13, 2026</p>
+<p class="meta">Last updated: November 17, 2026</p>
 <p>This policy explains what data the Ticket Snooze app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -43,7 +43,9 @@
 <li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: the snooze status, wake status and tag, and whether the snooze note, wake note and assignee alert are on.</li>
-<li><strong>Snooze records.</strong> In the same key-value store, for each snoozed ticket: the ticket number, the wake time, the status before the snooze, the snooze status and tag, the optional note the agent typed (up to 500 characters), the id and name of the agent who snoozed it, when it was snoozed and how many wake attempts failed. No customer contact data is stored.</li>
+<li><strong>Snooze records.</strong> In the same key-value store, for each snoozed ticket: the ticket number, the wake time, the status before the snooze, the snooze status and tag, the optional note the agent typed (up to 500 characters), the id and name of the signed-in agent who snoozed it (taken from the verified session), when it was snoozed and how many wake attempts failed. No customer contact data is stored.</li>
+<li><strong>Your own API key at sign-in.</strong> Each agent signs in once per session with their own Freshdesk API key. The app sends it only to your Freshdesk domain to ask who owns it (agent id, name, email and roles), then discards it. The key is never stored, logged or shown again.</li>
+<li><strong>Sign-in sessions and confirmations.</strong> In the key-value store: a random session token with the agent's id, name, email and whether they are an admin, removed after 30 minutes or at sign-out, and single-use confirmation tokens for snooze, cancel and wake actions, removed after 10 minutes.</li>
 <li><strong>Data read from your helpdesk.</strong> To snooze and wake a ticket, the app reads its status, tags and assigned agent. When the app is installed, it reads the profile of the agent whose API key you entered, only to check that the key works. None of this is stored apart from the record above.</li>
 </ol>
 <h2>What the app changes</h2>
@@ -53,7 +55,7 @@
 <h2>Retention and deletion</h2>
 <p>A snooze record is removed when the ticket wakes, when the snooze is cancelled, when the ticket is deleted or no longer in the snooze status at the wake time, or after 5 failed wake attempts. Settings stay until you uninstall the app. Private notes added by the app stay on the tickets like any other note. When the app is uninstalled, it removes its background schedule, and Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Access to the app follows your Freshdesk agent permissions.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Every request to the app's server functions needs a verified sign-in session. Settings can be changed only by Freshdesk admins, and each snooze, cancel or wake needs a single-use confirmation issued by the server.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

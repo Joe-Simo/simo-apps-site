@@ -34,6 +34,14 @@
 <p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the job number (for example j12) and a screenshot of the message you see. Never send your API key.</p>
 <h2 id="faq">Frequently asked questions</h2>
 <details>
+<summary>Who can use the app, and why does it ask for my API key?</summary>
+<p>Only Freshdesk admins (the Account Administrator or Administrator role) can use Bulk Update Pro. When you open it, paste your own API key from Profile settings &gt; View API key. The app asks Freshdesk who owns the key and checks your role on the server before it previews, updates, pauses or undoes anything. The key is used for that one check and is not stored. Your session lasts 30 minutes, and each job records the admin who started it. Other roles, including custom roles, are refused. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+</details>
+<details>
+<summary>I see "Only Freshdesk admins can use this app", "Your session ended" or "needs a fresh confirmation".</summary>
+<p>Sign in again with your own key as an admin. A job can only start from a preview made in the last 10 minutes by the same admin, and each preview starts one job; preview again if needed. Undo works the same way from the Undo button.</p>
+</details>
+<details>
 <summary>A name in my changes is "unknown" or "matches more than one".</summary>
 <p>Bulk Update Pro uses the labels from your Freshdesk ticket form, your group names and your agent names or emails. If two groups or agents share a name, use the agent's email, or rename one of the groups. If two custom fields share a label, use the field's API name (for example cf_region).</p>
 </details>

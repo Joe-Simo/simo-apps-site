@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Recurring Tickets privacy policy</h1>
-<p class="meta">Last updated: November 8, 2026</p>
+<p class="meta">Last updated: November 17, 2026</p>
 <p>This policy explains what data the Recurring Tickets app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -44,6 +44,8 @@
 <li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Templates.</strong> In the Freshworks app key-value store attached to your installation, the app keeps each template you save: its name, schedule, time zone, and the ticket fields you entered (subject, description, requester email, CC addresses, group, agent, priority, status, type, tags and custom field values). It also keeps the time zone setting read from your Freshdesk account and, per template, the 10 most recent runs.</li>
 <li><strong>Run log.</strong> In Freshworks entity storage attached to your installation, the app writes one record per run: the template number and name, the result, whether it was scheduled or started with Run now, the occurrence date and time, the ticket number and any error message from Freshdesk. The oldest records are deleted when the log passes 9,000 records.</li>
+<li><strong>Your own API key at sign-in.</strong> When an admin opens the app, they paste their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to learn who owns it and their role. The key is not stored, logged or returned to the page.</li>
+<li><strong>Sessions, confirmations and recent changes.</strong> In the same key-value store, for up to 30 minutes: a random session code with the admin's agent number, name and email. For up to 10 minutes: one-time confirmation codes for deleting a template or using Run now, with the admin's agent number. The app also keeps the 50 most recent admin changes (created, edited, paused, resumed, deleted, Run now, default time zone) with the time, the template number and name, and the agent number and name of the admin, and on each template the agent number and name of the admin who created it, last edited it and last paused or resumed it. Run now entries in the template's recent runs name the admin who ran it.</li>
 <li><strong>Data read from your helpdesk.</strong> To fill the template form, the app reads your account time zone, ticket field definitions, group names and agent names and emails. To confirm that a ticket was created after an unclear response, it reads the requester's 30 most recent tickets and compares their subject and creation time. This happens inside the Freshworks serverless environment and none of it is stored.</li>
 </ol>
 <h2>What the app changes</h2>
@@ -53,7 +55,7 @@
 <h2>Retention and deletion</h2>
 <p>Templates stay in your installation until you delete them or uninstall the app. Run log records stay until they are pruned as described above or the app is uninstalled. Deleting a template does not delete the tickets it created. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Before it shows templates or makes any change, the app checks on the server that the person using it is a Freshdesk admin (see "Your own API key at sign-in" above). We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

@@ -35,6 +35,14 @@
 <p>When you write, please include your Freshdesk domain, what you expected, what happened, and a screenshot of the Retention Guard status page if possible. Never send your API key by email.</p>
 <h2 id="faq">Frequently asked questions</h2>
 <details>
+<summary>Who can use the app, and why does it ask for my API key?</summary>
+<p>Only Freshdesk admins (the Account Administrator or Administrator role) can use Retention Guard. When you open it, paste your own API key from Profile settings &gt; View API key. The app asks Freshdesk who owns the key and checks your role on the server before it shows anything or changes anything. The key is used for that one check and is not stored. Your session lasts 30 minutes, and the audit log records the admin behind each move. Other roles, including custom roles, are refused. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+</details>
+<details>
+<summary>I see "Only Freshdesk admins can use this app", "Your session ended" or "needs a fresh confirmation".</summary>
+<p>Sign in again with your own key as an admin. Enabling Move to Trash, and running a batch by hand while it is on, needs a confirmation the server issues to you when you open the dialog. It works once and expires after 10 minutes; open the dialog again if needed.</p>
+</details>
+<details>
 <summary>Will the app delete tickets as soon as I install it?</summary>
 <p>No. Retention Guard starts in report-only mode and never changes anything until you run a complete dry-run report, click "Enable Move to Trash" and type MOVE TO TRASH.</p>
 </details>

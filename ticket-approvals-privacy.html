@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Ticket Approvals privacy policy</h1>
-<p class="meta">Last updated: November 10, 2026</p>
+<p class="meta">Last updated: November 17, 2026</p>
 <p>This policy explains what data the Ticket Approvals app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -47,6 +47,8 @@
 <li><strong>Open request list and decision log.</strong> A list of open requests (up to 1,000) and a log of roughly the last 1,000 events (time, ticket and request numbers, event, agent number and name, rule, amount and comment) for the full page view and CSV export.</li>
 <li><strong>Data read from your helpdesk.</strong> The app reads agents (name, email and whether they are active) to verify approvers and the acting agent, and the type, group, priority, tags and custom fields of tickets to apply rules. Approver emails are used only to fill the notify list of the private note and are not shown in the browser.</li>
 </ol>
+<h2>Agent sign-in</h2>
+<p>Each agent signs in to the sidebar, and each admin to the full page view, with their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to confirm who the agent is, then discards it. The key is not stored. The app keeps a random session token with the agent's number, name, email and admin flag for 30 minutes, and single-use confirmation tokens for 10 minutes, in your installation's key-value store. Roles are read from your Freshdesk roles list to tell admins from other agents.</p>
 <h2>What the app changes</h2>
 <p>For each request, decision and cancel, the app adds one private note to the ticket. If you choose statuses under Settings, it sets the ticket status. The app does not close or delete tickets.</p>
 <h2>Third parties and external resources</h2>
@@ -54,7 +56,7 @@
 <h2>Retention and deletion</h2>
 <p>Settings, rules and requests stay in your installation until you change or delete them or uninstall the app. Private notes added by the app stay on the tickets like any other note. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Every decision is checked on the server against the acting agent.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Every action is checked on the server against the signed-in agent, and approve, reject, cancel and delete rule need a single-use confirmation.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

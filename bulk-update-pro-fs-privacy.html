@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Bulk Update Pro for Freshservice privacy policy</h1>
-<p class="meta">Last updated: November 9, 2026</p>
+<p class="meta">Last updated: November 16, 2026</p>
 <p>This policy explains what data the Bulk Update Pro for Freshservice app ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -44,6 +44,8 @@
 <li><strong>Freshservice API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshservice API of your own account, and it is never shown in the app or written to logs.</li>
 <li><strong>Ticket data read from your helpdesk.</strong> To preview and apply changes, the app reads tickets you list through the Freshservice API, together with your ticket field definitions, group and department names, agent names and emails, and, when a job adds a private note, the conversations of each ticket so the same note is never posted twice. The preview reads up to 5 tickets to show what will change. This happens inside the Freshworks serverless environment, and subjects, names, emails and conversations are not stored.</li>
 <li><strong>Jobs and change log.</strong> In the Freshworks app key-value store attached to your installation, the app keeps the ticket numbers of each job, the changes you requested (including the text of any private note), and one log entry per ticket: the ticket number, the result, the previous and new values of the fields the job changed (these can include agent, group and department IDs, categories, tags and the values of custom fields you chose to change) and any error message from Freshservice. Saved presets keep the preset name and its change lines. The 9 most recent jobs are listed; storage of older jobs is reused and overwritten by new jobs.</li>
+<li><strong>Your own API key at sign-in.</strong> When an admin opens the app, they paste their own Freshservice API key. The app sends it once to your Freshservice account (GET /api/v2/agents/me) to learn who owns it and their roles. The key is not stored, logged or returned to the page.</li>
+<li><strong>Sessions, confirmations and job owners.</strong> In the same key-value store, for up to 30 minutes: a random session code with the admin's agent number, name and email. For up to 10 minutes: one-time confirmation codes for starting a job or an undo, with the admin's agent number. Each job keeps the agent number and name of the admin who started it and who last paused, resumed or cancelled it.</li>
 </ol>
 <h2>What the app changes</h2>
 <p>The app only changes the tickets and fields you list, and only after you start a job from its preview. When you add a private note, it is posted on the tickets the job changes. Undo changes the same tickets back; private notes stay on the tickets.</p>
@@ -52,7 +54,7 @@
 <h2>Retention and deletion</h2>
 <p>Jobs, change logs and presets stay in your installation until they are overwritten by newer jobs or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's key-value data according to the Freshworks platform policies. Download any change log you need as CSV before uninstalling.</p>
 <h2>Security</h2>
-<p>All communication with the Freshservice API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshservice agent permissions.</p>
+<p>All communication with the Freshservice API uses HTTPS and is performed by the Freshworks platform. Before it previews, updates or undoes anything, the app checks on the server that the person using it is a Freshservice admin (see "Your own API key at sign-in" above). We also recommend making the app visible to admins only in your Freshservice app settings.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshservice. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

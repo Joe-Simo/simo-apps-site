@@ -39,6 +39,8 @@
 <p>Only to your own Freshdesk account, through the Freshdesk API. The app sends no data to the developer or to any third party, and uses no analytics, cookies or trackers.</p>
 <h2>API key</h2>
 <p>The admin API key you enter at installation is stored by Freshworks as an encrypted, secure installation parameter. The developer cannot see it.</p>
+<h2>Agent sign-in</h2>
+<p>Each agent signs in to the sidebar with their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to confirm who the agent is, then discards it. The key is not stored. The app keeps a random session token with the agent's id, name, email and admin flag for 30 minutes, and single-use confirmation tokens for Send now and Cancel for 10 minutes, in your installation's key-value store.</p>
 <h2>Removal</h2>
 <p>Uninstalling the app removes its stored data through the Freshworks platform.</p>
 <h2>Contact</h2>

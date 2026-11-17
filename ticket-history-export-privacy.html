@@ -30,7 +30,7 @@
 <div class="wrap">
 <div class="prose">
 <h1>Ticket History Export privacy policy</h1>
-<p class="meta">Last updated: November 15, 2026</p>
+<p class="meta">Last updated: November 17, 2026</p>
 <p>This policy explains what data the Ticket History Export app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
 <h2>Summary</h2>
 <ul>
@@ -47,6 +47,8 @@
 <li><strong>Data read from your helpdesk.</strong> Through the Freshdesk API the app reads the tickets that match your export, their conversations (replies, private notes if you include them, forwards), the requester's name and email, and the names of your groups, agents, companies and ticket fields so the file shows names instead of numbers.</li>
 <li><strong>Exported ticket data.</strong> For each exported ticket the app stores a condensed copy (ticket fields, requester name and email, and every included message with sender, recipients, date, text body and attachment names) in the Freshworks key-value storage attached to your installation, so the export can run in the background and you can download it. Attachment files themselves are not copied. Message bodies longer than 20,000 characters are cut.</li>
 <li><strong>Export status.</strong> Progress counts, the time of the last run and the last error message, kept in the app key-value store. The 10 most recent exports are listed.</li>
+<li><strong>Sign-in.</strong> To use the app, an admin pastes their own Freshdesk API key. The app sends it once to your Freshdesk account (GET /api/v2/agents/me) to learn who owns it and checks their role. The key is not stored, logged or returned. The app then keeps a session record (agent ID, name, email and admin flag) in the app key-value store for 30 minutes.</li>
+<li><strong>Confirmations and export owners.</strong> Cancelling an export uses a single-use confirmation record that expires after 10 minutes. The name and agent ID of the admin who started, paused, resumed or cancelled an export are kept with that export.</li>
 </ol>
 <h2>Where the file is built</h2>
 <p>When you click Download, the stored export is sent to your browser and the CSV or HTML file is built there and saved on your computer. The file is not uploaded anywhere. Once downloaded, it is yours to protect: it can contain customer names, email addresses, ticket text and, if you chose to include them, private notes.</p>
@@ -57,7 +59,7 @@
 <h2>Retention and deletion</h2>
 <p>An export can be downloaded for 7 days after it finishes, then it leaves the export list. The stored ticket data has an expiry set when it is written and is removed automatically at the latest 15 days after it was stored, including data of cancelled exports. Download the file you need within the 7 days. Export settings and status are kept until they are overwritten by newer exports or the app is uninstalled. When the app is uninstalled, Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
 <h2>Security</h2>
-<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Access to the app follows your Freshdesk agent permissions.</p>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. Every server function of the app checks a signed-in session first, and only agents with the Account Administrator or Administrator role in your Freshdesk can open one. The admin recorded on an export is taken from that session, never from what the browser sends.</p>
 <h2>Your rights</h2>
 <p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
 <h2>Contact</h2>

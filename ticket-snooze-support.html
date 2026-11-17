@@ -62,8 +62,12 @@
 <p>If Freshdesk is busy or the request fails, a background check every 10 minutes tries again, up to 5 times. If it still does not wake, check that the API key in the app settings belongs to an active admin agent, and email us with the ticket number.</p>
 </details>
 <details>
+<summary>Why does the app ask for my API key?</summary>
+<p>Each agent signs in once per session with their own Freshdesk API key (Profile settings &gt; View API key). Freshdesk confirms who you are, so the snooze record shows the right agent. The key is used for that one check and is not stored, and the session ends after 30 minutes. Before each snooze, cancel or wake, the app asks you to confirm.</p>
+</details>
+<details>
 <summary>Who can change the settings?</summary>
-<p>Anyone who can open Ticket Snooze from the apps menu can change the snooze status, wake status, tag and note settings. Limit access to the app in Freshdesk if only admins should do that.</p>
+<p>Only Freshdesk admins (Account Administrator or Administrator role) can see and change the snooze status, wake status, tag and note settings on the admin page. Other agents can snooze, cancel and wake tickets and see the snoozed list.</p>
 </details>
 <details>
 <summary>The sidebar shows an error.</summary>

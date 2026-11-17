@@ -39,7 +39,7 @@
 </details>
 <details>
 <summary>What does "Block Resolve and Close" do?</summary>
-<p>When it is on for a checklist and a required item is still open, the Close button and a status change to Resolved or Closed on the ticket page are stopped, and the agent sees which item is missing. It does not block the ticket list view, bulk actions, automations, the API or other apps.</p>
+<p>When it is on for a checklist and a required item is still open, the Close button and a status change to Resolved or Closed on the ticket page are stopped, and the agent sees how many required items are open. The sidebar shows which ones. It does not block the ticket list view, bulk actions, automations, the API or other apps.</p>
 </details>
 <details>
 <summary>When is a checklist added automatically?</summary>
@@ -60,6 +60,14 @@
 <details>
 <summary>How many checklists and items can I have?</summary>
 <p>Up to 50 checklists with up to 50 items each, 160 characters per item. A ticket can hold up to 6 checklists and 120 items.</p>
+</details>
+<details>
+<summary>Why does the app ask for my API key?</summary>
+<p>Each agent signs in once per session with their own Freshdesk API key (Profile settings &gt; View API key). Freshdesk confirms who you are, so ticked items and the completion note show the right agent. The key is used for that one check and is not stored, and the session ends after 30 minutes. Before a checklist is removed from a ticket, or deleted on the admin page, the app asks you to confirm.</p>
+</details>
+<details>
+<summary>Who can create and change checklists?</summary>
+<p>Only Freshdesk admins (Account Administrator or Administrator role) can sign in to the admin page to create, edit and delete checklists and change the note setting. Other agents use checklists in the ticket sidebar.</p>
 </details>
 <details>
 <summary>The sidebar shows an error.</summary>

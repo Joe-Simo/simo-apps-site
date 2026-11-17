@@ -34,6 +34,14 @@
 <p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the template name and a screenshot of the message you see. Never send your API key.</p>
 <h2 id="faq">Frequently asked questions</h2>
 <details>
+<summary>Who can use the app, and why does it ask for my API key?</summary>
+<p>Only Freshdesk admins (the Account Administrator or Administrator role) can use Recurring Tickets. When you open it, paste your own API key from Profile settings &gt; View API key. The app asks Freshdesk who owns the key and checks your role on the server before it shows or changes anything. The key is used for that one check and is not stored. Your sign-in lasts 30 minutes. Other roles, including custom roles, are refused. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+</details>
+<details>
+<summary>I see "Only Freshdesk admins can use this app", "Your session ended" or "needs a fresh confirmation".</summary>
+<p>Sign in again with your own key as an admin. Delete and Run now need a confirmation the server issues to you when you click them. It works once, for that template only, and expires after 10 minutes; click the button again if needed.</p>
+</details>
+<details>
 <summary>How close to the scheduled time is a ticket created?</summary>
 <p>The app checks every 5 minutes for templates that are due, so a ticket is normally created within 5 minutes after its time. If many templates are due at the same moment, up to 8 are handled per check and the rest follow on the next checks.</p>
 </details>
