@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Round Robin Assign</title>
+<meta name="description" content="What data Round Robin Assign for Freshdesk processes, where it is stored and how to contact us.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/round-robin-assign.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="round-robin-assign.html"><img src="assets/round-robin-assign.svg" alt="" width="32" height="32">Round Robin Assign</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="round-robin-assign.html">Product</a></li>
+<li><a href="round-robin-assign-support.html">Support</a></li>
+<li><a href="round-robin-assign-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Round Robin Assign privacy policy</h1>
+<p class="meta">Last updated: November 18, 2026</p>
+<p>This policy explains what data the Round Robin Assign app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app stores only its settings, the rotation of each group and a short log of its own assignments. It stores no customer contact data.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: the ids of the groups the app manages and the options (assign on group move, private note, pause).</li>
+<li><strong>Rotations.</strong> In the same store, one record per managed group: the agent ids in the rotation and their order, the mode, the time zone, the turn pointer, today's date and today's assignment count per agent, who is out of queue, caps, weekly shift hours, the open ticket count of each capped agent, and the newest assignment lines.</li>
+<li><strong>Assignment log.</strong> In the same store, the last 200 assignments: the time, ticket id, agent id and result (for a failed assignment, the status code Freshdesk returned). Agent and group names are added only when you view or download the log and are not stored with it.</li>
+<li><strong>Assignment markers.</strong> For each ticket the app assigns, a record of the ticket id, agent id, group id and time, removed after one day. It prevents a ticket from being assigned twice and lets the turn be given back.</li>
+<li><strong>Your own API key at sign-in.</strong> Everyone who opens the app signs in once per session with their own Freshdesk API key. The app sends it only to your Freshdesk domain to ask who owns it (agent id, name, email and roles), then discards it. The key is never stored, logged or shown again.</li>
+<li><strong>Sign-in sessions.</strong> In the key-value store: a random session token with the agent's id, name, email and whether they are an admin, removed after 30 minutes or at sign-out. Short locks with no personal data keep two tickets from taking the same turn and expire after 15 seconds.</li>
+<li><strong>Data read from your helpdesk.</strong> To assign tickets, the app reads the group, agent, status and spam and deleted flags of new and updated tickets, searches for unassigned open and pending tickets in managed groups, and counts the open and pending tickets of agents with a cap. To fill the admin page, it reads your groups, their agents, agent names and the roles list. When the private note is on, it reads the assigned agent's name. When the app is installed, it reads the profile of the agent whose API key you entered, only to check that the key works. None of this is stored apart from the records above.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>The app sets the agent on new tickets without an agent in the groups you manage and, when you turn it on, on tickets moved into a managed group without an agent. When the private note option is on, it adds a private note to each ticket it assigns, naming the agent and the reason. It does not change any other ticket field, does not reassign tickets that already have an agent, does not reply to customers and does not close or delete tickets.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. The background check every 5 minutes runs on the Freshworks scheduling service. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>Assignment markers are removed after one day and sign-in sessions after 30 minutes. The assignment log keeps the last 200 lines, and older lines are overwritten. Today's counts are replaced each day. Settings and rotations stay until you change them or uninstall the app. Private notes added by the app stay on the tickets like any other note. When the app is uninstalled, it removes its background schedule, and Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Every request to the app's server functions needs a verified sign-in session. Settings, rotations, the queue view and the log are available only to Freshdesk admins, and agents can change only their own queue status. We also recommend making the admin page visible to admins only in your Freshdesk app settings.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="round-robin-assign.html">Round Robin Assign</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="round-robin-assign-support.html">Round Robin Assign support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="round-robin-assign-privacy.html" aria-current="page">Round Robin Assign privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Round Robin Assign is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
