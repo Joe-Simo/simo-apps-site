@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: KB Review Reminders</title>
+<meta name="description" content="How KB Review Reminders for Freshdesk handles your data.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/kb-review-reminders.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="kb-review-reminders-support.html"><img src="assets/kb-review-reminders.svg" alt="" width="32" height="32">KB Review Reminders</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="kb-review-reminders-support.html">Support</a></li>
+<li><a href="kb-review-reminders-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>KB Review Reminders privacy policy</h1>
+<p class="meta">Last updated: November 20, 2026</p>
+<p>This policy explains what data the KB Review Reminders app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app stores only its settings, a due list of articles, short markers per article and the emails of article owners it reminds. It stores no customer contact data.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> Stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: the default review interval, lead time, reminder mode, default owner email, the Include drafts option, and interval overrides by category, folder and article id.</li>
+<li><strong>Due list.</strong> In the same store: for each article that is due soon or overdue, its id, title, folder id, category id, author agent id, due date and state.</li>
+<li><strong>Labels.</strong> In the same store: category and folder names, and the email address of each article owner the app looked up for a reminder, used for the filters on the admin page.</li>
+<li><strong>Check progress.</strong> In the same store: the time of the last check, article and due counts, and the position where the next check continues.</li>
+<li><strong>Article markers.</strong> Per article: the date it was marked reviewed or snoozed, and the due date and state a reminder was sent for.</li>
+<li><strong>Your own API key at sign-in.</strong> Each admin signs in once per session with their own Freshdesk API key. The app sends it only to your Freshdesk domain to ask who owns it (agent id, name, email and roles), then discards it. The key is never stored, logged or shown again.</li>
+<li><strong>Sign-in sessions.</strong> In the key-value store: a random session token with the agent's id, name, email and whether they are an admin, removed after 30 minutes. Single-use confirmation tokens with the agent id are removed after 10 minutes.</li>
+<li><strong>Data read from your helpdesk.</strong> To run the check, the app reads your solution categories, folders, subfolders and the article lists in each folder (id, title, folder, category, author agent id, status and last update). For reminders, it reads the email and active status of each article's author agent. At sign-in it reads the roles list. Article text is not stored. None of this is stored apart from the records above.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>When reminders are on, the app creates tickets in your own Freshdesk, tagged kb-review, that list article titles, due dates and links to the articles. The requester is the article owner's email, or the default owner email from Settings. The app does not edit, publish, unpublish or delete articles, does not reply to customers and does not change other tickets.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. The daily check runs on the Freshworks scheduling service. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>Sign-in sessions are removed after 30 minutes. Due list rows are replaced on each check, and rows for articles that are no longer due are dropped once a full check of the knowledge base finishes. Settings, labels and article markers stay until you change them or uninstall the app. Reminder tickets the app created stay in your Freshdesk until you delete them. When the app is uninstalled, it removes its daily schedule, and Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Every request to the app's server functions needs a verified sign-in session, and only Freshdesk admins (Account Administrator or Administrator role) can sign in. We also recommend making the app visible to admins only in your Freshdesk app settings.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="kb-review-reminders-support.html">KB Review Reminders support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="kb-review-reminders-privacy.html" aria-current="page">KB Review Reminders privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>KB Review Reminders is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>

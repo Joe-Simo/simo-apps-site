@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KB Review Reminders">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#2c5cc5"/>
+  <path d="M12 17c6-2.5 12-2.5 18 1v30c-6-3.5-12-3.5-18-1z" fill="#ffffff"/>
+  <path d="M34 18c6-3.5 12-3.5 18-1v30c-6-2.5-12-2.5-18 1z" fill="#dbe5fb"/>
+  <path d="M16 24h9M16 29h9M16 34h7M38 24h9M38 29h6" stroke="#9db3e6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="46" cy="44" r="11" fill="#ffffff" stroke="#2c5cc5" stroke-width="3"/>
+  <path d="M41 44.5l3.5 3.5 6.5-7" fill="none" stroke="#1f9d55" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
