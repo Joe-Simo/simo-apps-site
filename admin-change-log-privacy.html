@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Admin Change Log</title>
+<meta name="description" content="How Admin Change Log for Freshdesk handles your data.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/admin-change-log.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="admin-change-log-support.html"><img src="assets/admin-change-log.svg" alt="" width="32" height="32">Admin Change Log</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="admin-change-log-support.html">Support</a></li>
+<li><a href="admin-change-log-privacy.html" aria-current="page">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<div class="prose">
+<h1>Admin Change Log privacy policy</h1>
+<p class="meta">Last updated: November 22, 2026</p>
+<p>This policy explains what data the Admin Change Log app for Freshdesk ("the app") processes and how. The app is published on the Freshworks Marketplace.</p>
+<h2>Summary</h2>
+<ul>
+<li>The app runs entirely on the Freshworks platform. We do not operate any servers that receive your data.</li>
+<li>We do not sell, share or transfer your data to any third party.</li>
+<li>The app stores a copy of your helpdesk setup (rules, agents, groups, roles, fields, SLA policies, business hours and similar settings), a log of the latest 500 changes and short sign-in sessions. It stores no tickets, ticket text, contacts or article text.</li>
+</ul>
+<h2>Data the app processes</h2>
+<ol>
+<li><strong>Installation settings.</strong> Your Freshdesk domain, stored by Freshworks as an installation parameter.</li>
+<li><strong>Freshdesk API key.</strong> The API key of an admin agent, stored by Freshworks as a secure (encrypted) installation parameter. It is used only to call the Freshdesk API of your own account, and it is never shown in the app or written to logs.</li>
+<li><strong>Settings.</strong> In the Freshworks app key-value store attached to your installation: which areas are watched, the check interval, the alert note option with its ticket number and up to 10 email addresses you enter, and the time of the last save.</li>
+<li><strong>Setup copies.</strong> In the same store: the last copy of each watched item, with timestamps and counters left out, plus a fingerprint index per area so unchanged items need no new copy. For agents the copy holds the agent id, name, email, active flag, role, group and skill ids, ticket scope, occasional flag and type. Other areas hold the item as the Freshdesk API returns it, for example a rule's name, conditions and actions, a group's name, members and settings, or a ticket field's label and choices. Canned response folders hold only the folder name and the number of responses. Items over about 7 KB are kept as a fingerprint only.</li>
+<li><strong>Change log.</strong> In the same store: the latest 500 changes, each with the time it was first seen, the area, the item id and name, the kind of change, Freshdesk's last update time for the item and the changed fields with their old and new values (each cut to 120 characters). Older entries are overwritten. The change list, the CSV download and the alert note are built from this log.</li>
+<li><strong>Check summary.</strong> In the same store: the time and counts of the last check, the position in the change log, which areas have a baseline copy, and where the next check continues.</li>
+<li><strong>Your own API key at sign-in.</strong> Each admin signs in once per session with their own Freshdesk API key. The app sends it only to your Freshdesk domain to ask who owns it (agent id, name, email and roles), then discards it. The key is never stored, logged or shown again.</li>
+<li><strong>Sign-in sessions.</strong> In the key-value store: a random session token with the agent's id, name, email and whether they are an admin, removed after 30 minutes.</li>
+<li><strong>Data read from your helpdesk.</strong> On each check the app reads the areas you watch: automation rules of the three types, agents, groups, roles, ticket fields, SLA policies, business hours, canned response folders, helpdesk settings, and knowledge base categories and folders. At install and sign-in it reads the agent who owns the key and the roles list. It does not read tickets, contacts, companies, canned response text or article text. Nothing read is stored apart from the records above.</li>
+</ol>
+<h2>What the app changes</h2>
+<p>Only when you turn on the alert note: after a check finds changes, the app adds a private note with a short list of them to the one ticket you picked, and lists the email addresses you entered as people to notify, so Freshdesk can email them. The app never changes rules, agents, groups, fields, SLA policies or any other setting, and does not reply to customers.</p>
+<h2>Third parties and external resources</h2>
+<p>The app does not send data to any third party and makes no requests outside your Freshdesk account. Notification emails for the alert note are sent by Freshdesk. The checks run on the Freshworks scheduling service. Apart from the Freshworks app client script that every Freshworks app loads, the interface uses no external scripts, fonts, analytics, cookies or trackers.</p>
+<h2>Retention and deletion</h2>
+<p>Sign-in sessions are removed after 30 minutes. The change log keeps the latest 500 changes; older entries are overwritten. The check summary is replaced on each check. A setup copy is replaced when the item changes and deleted when the app logs the item as removed. Copies of an area you switch off stay until you uninstall the app. Settings stay until you change them or uninstall. CSV and JSON files you download are on your own computer and are yours to keep or delete. An alert note the app added stays in your Freshdesk until you delete it. When the app is uninstalled, it removes its schedules, and Freshworks removes the installation parameters and the app's stored data according to the Freshworks platform policies.</p>
+<h2>Security</h2>
+<p>All communication with the Freshdesk API uses HTTPS and is performed by the Freshworks platform. The app sends requests only to the Freshdesk domain you entered, after checking it. Every request to the app's server functions needs a verified sign-in session, and only Freshdesk admins (Account Administrator or Administrator role) can sign in, see the change log, change settings or download exports.</p>
+<h2>Your rights</h2>
+<p>Because the app does not keep personal data outside your Freshworks account, requests about personal data in your helpdesk should be handled in Freshdesk. For questions about this policy, contact us at the email below.</p>
+<h2>Contact</h2>
+<p><a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<h2>Changes</h2>
+<p>We will update this page if the app's data handling changes. The date at the top shows the latest revision.</p>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="admin-change-log-support.html">Admin Change Log support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="admin-change-log-privacy.html" aria-current="page">Admin Change Log privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Admin Change Log is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
