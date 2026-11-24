@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Ticket QA Scorecards</title>
+<meta name="description" content="Get help with Ticket QA Scorecards for Freshdesk: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/ticket-qa-scorecards.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="ticket-qa-scorecards-support.html"><img src="assets/ticket-qa-scorecards.svg" alt="" width="32" height="32">Ticket QA Scorecards</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="ticket-qa-scorecards-support.html" aria-current="page">Support</a></li>
+<li><a href="ticket-qa-scorecards-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Ticket QA Scorecards support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshdesk domain, the ticket number if your question is about one review, and a screenshot of what you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>Who can do what?</summary>
+<p>Freshdesk admins (Account Administrator or Administrator role) set up the rubric, reviewers and sample, run the sampler, see the report and download CSV files. Admins and the reviewers you pick score tickets, and nobody scores a ticket they handled. Admins and reviewers can see the review of a ticket in the ticket sidebar, and the agent who handled the ticket can too when agent view is on. These checks run on the app's server side, not only in the screen.</p>
+</details>
+<details>
+<summary>How do I build the rubric?</summary>
+<p>Open the app from the apps menu, sign in and go to the rubric editor. Add up to 15 lines. Each line has a label, optional help text, a weight and a scale: pass or fail, 1 to 5, or 0 to 10. Mark a line as critical if failing it should fail the whole review. You can also set a pass mark in percent.</p>
+</details>
+<details>
+<summary>How is the score worked out?</summary>
+<p>Each answered line becomes a value from 0 to 1 (pass is 1 and fail is 0, 1 to 5 maps 1 to 0 and 5 to 1, 0 to 10 is divided by 10). The score is the weighted average of the answered lines, as a percent rounded to one decimal. Lines marked N/A are left out. A critical line scored below half (fail, 1 or 2, or 0 to 4) fails the review whatever the percent, and so does a score under the pass mark.</p>
+</details>
+<details>
+<summary>What happens to old reviews when I change the rubric?</summary>
+<p>Saving changed lines creates a new rubric version. Reviews already scored keep the version they were scored with, so their line labels and results stay the same in the sidebar and the CSV.</p>
+</details>
+<details>
+<summary>How are tickets picked for review?</summary>
+<p>Once a week the sampler looks for tickets each agent resolved or closed over the last 7 days. It skips tickets with fewer conversations than your minimum (2 by default) or with a tag you excluded, and tickets already reviewed. It then splits a sample across your reviewers, up to the number per reviewer you set (15 by default), shares it across agents by ticket volume, and never gives reviewers their own tickets. Admins can select Run now to build the sample right away.</p>
+</details>
+<details>
+<summary>Why is my review queue empty?</summary>
+<p>Check that you are picked as a reviewer, that agents resolved or closed tickets in the last 7 days, and that your minimum conversations and excluded tags do not filter them all out. On a busy helpdesk the sampler spreads its Freshdesk requests over more than one run to stay within your API limits, so the queue can take until a later run to fill (the sampler checks every 6 hours). An admin can select Run now to try again.</p>
+</details>
+<details>
+<summary>What do agents see?</summary>
+<p>When agent view is on, the agent who handled a ticket sees its score, pass or fail, the result of each line, the reviewer's comment, who scored it and when, in the ticket sidebar. They can acknowledge the review, or dispute it with a comment. An admin can turn agent view off in Settings.</p>
+</details>
+<details>
+<summary>Where do disputes go?</summary>
+<p>A dispute is saved with the review, and the agent's comment appears in the dispute_comment column of the CSV export, next to an acknowledged column. The app does not send notifications about disputes. A review can be disputed once.</p>
+</details>
+<details>
+<summary>What is in the report?</summary>
+<p>The Report tab shows this week's review progress and, for the current month, each agent's average score and fail count and the results per rubric line. Earlier months are available through the CSV download.</p>
+</details>
+<details>
+<summary>What is in the CSV?</summary>
+<p>One row per review for the month you pick: ticket id, review time in UTC, agent id and name, reviewer id and name, rubric version, score, result, line scores, comment, acknowledged and dispute comment. The download comes in parts of 30 reviews with a short wait between parts to stay within the Freshworks storage limits, and covers up to 600 reviews per month. Text that a spreadsheet could read as a formula is prefixed with a single quote.</p>
+</details>
+<details>
+<summary>Can I rescore a ticket?</summary>
+<p>Yes. Scoring a ticket again replaces its earlier review.</p>
+</details>
+<details>
+<summary>How do I delete review data?</summary>
+<p>Reviews are kept while the app is installed. The app has no delete button in this version. When you uninstall the app, Freshworks deletes all of its stored data for your account, and it cannot be recovered, so download any months you want to keep as CSV first.</p>
+</details>
+<details>
+<summary>Why does the app ask for my API key?</summary>
+<p>Everyone signs in once per session with their own Freshdesk API key (Profile settings &gt; View API key). Freshdesk confirms who you are and your roles, so the app knows whether you are an admin, a reviewer or the agent on a ticket. The key is used for that one check and is not stored, and the session ends after 30 minutes.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="ticket-qa-scorecards-support.html" aria-current="page">Ticket QA Scorecards support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="ticket-qa-scorecards-privacy.html">Ticket QA Scorecards privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Ticket QA Scorecards is an independent app for Freshdesk by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
