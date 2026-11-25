@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Admin Change Log for Freshservice</title>
+<meta name="description" content="Get help with Admin Change Log for Freshservice: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/admin-change-log.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="admin-change-log-fs-support.html"><img src="assets/admin-change-log.svg" alt="" width="32" height="32">Admin Change Log for Freshservice</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="admin-change-log-fs-support.html" aria-current="page">Support</a></li>
+<li><a href="admin-change-log-fs-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Admin Change Log for Freshservice support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshservice domain, the area and item name, the change number if you have one, and a screenshot of what you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>Does the app show who made a change?</summary>
+<p>No. Freshservice does not tell apps who made a change. The app shows what changed and when it was first seen, which is within one check interval of the change.</p>
+</details>
+<details>
+<summary>Why is the change list empty after install?</summary>
+<p>The first checks take a baseline copy of your setup and log nothing. The first check runs about 6 minutes after install, and on a large setup the baseline can take a few checks. Changes made after the baseline show in the list.</p>
+</details>
+<details>
+<summary>What does the app watch?</summary>
+<p>Agents, agent groups, roles, requester groups, ticket, change, problem and release form fields, agent fields, requester fields, SLA policies, business hours, departments, locations, products, vendors, asset types, service catalog categories and items, canned response folders (names and number of responses), knowledge base categories and folders, and workspaces. You can switch any area off in Settings.</p>
+</details>
+<details>
+<summary>What is not watched?</summary>
+<p>Workflow Automator workflows (Freshservice has no API that lists them), form business rules, orchestration, logins, billing and subscription, tickets, changes, problems and releases themselves, assets, requesters, canned response text and knowledge base article text.</p>
+</details>
+<details>
+<summary>We have several workspaces. What does the app see?</summary>
+<p>Freshservice returns agent groups, form fields, SLA policies, business hours, the service catalog, canned response folders and knowledge base areas for the primary workspace (plus global records) unless an app asks for one workspace at a time, and this version does not do that. So these areas are read from the primary workspace, and the admin page marks them "(primary workspace)". Agents, roles, requester groups, agent and requester fields, departments, locations, products, vendors, asset types and the workspace list itself are read for the whole account.</p>
+</details>
+<details>
+<summary>How often does the app check?</summary>
+<p>Every hour by default. In Settings you can choose every 3, 6 or 24 hours. Select Check now on the admin page to look right away. Check now and the exports wait a minute after a check, to stay within the Freshworks storage limits.</p>
+</details>
+<details>
+<summary>What does "Reordered" mean?</summary>
+<p>SLA policies are applied in order, so the app tracks their order. When a policy only moved to a new place in the list, the change shows as reordered. Moving one policy can shift the place of the policies around it, so you may see several reordered entries.</p>
+</details>
+<details>
+<summary>Why are some field details missing?</summary>
+<p>To keep the log small, each change keeps as many field differences as fit in one entry, and long values are cut to 120 characters. The change says when some were left out. Very large items, over about 7 KB, are logged as changed without field details.</p>
+</details>
+<details>
+<summary>How many changes are kept?</summary>
+<p>The latest 500. Older ones are overwritten. Up to 16 changes are logged per check, and the rest follow on the next check.</p>
+</details>
+<details>
+<summary>What is in the CSV and the SLA policy backup?</summary>
+<p>The CSV has one row per field change from the latest 500 changes, with times in UTC. The SLA policy backup is one JSON file with the last copy of your SLA policies the app keeps, with timestamps left out and the position of each policy. It reads about 15 policies every 30 seconds. It is a copy for reference: the app cannot restore policies, and workflows are not included.</p>
+</details>
+<details>
+<summary>What does the alert note do?</summary>
+<p>When it is on, after a check finds changes the app adds a private note with a short list of them to the one ticket you pick, and lists up to 10 email addresses to notify. Requesters never see private notes. It is off by default.</p>
+</details>
+<details>
+<summary>An area shows nothing or is skipped.</summary>
+<p>An area the API key cannot read, for example one your Freshservice plan does not include, is skipped and the others keep working. An area with 1,000 or more items is skipped, and knowledge base folders are skipped when there are more than 10 categories. Make sure the install key belongs to an admin, then email us with the area name.</p>
+</details>
+<details>
+<summary>Why does the app ask for my API key?</summary>
+<p>Each admin signs in once per session with their own Freshservice API key (Profile settings &gt; Your API key). Freshservice confirms who you are, so only admins (agents with an admin role, such as Account Admin or Admin) can use the app. The key is used for that one check and is not stored, and the session ends after 30 minutes.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="admin-change-log-support.html">Admin Change Log support</a></li>
+<li><a href="admin-change-log-fs-support.html" aria-current="page">Admin Change Log for Freshservice support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="admin-change-log-privacy.html">Admin Change Log privacy</a></li>
+<li><a href="admin-change-log-fs-privacy.html">Admin Change Log for Freshservice privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Admin Change Log for Freshservice is an independent app for Freshservice by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
