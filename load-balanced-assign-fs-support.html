@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support: Load Balanced Assign for Freshservice</title>
+<meta name="description" content="Get help with Load Balanced Assign for Freshservice: contact and frequently asked questions.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/load-balanced-assign-fs.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site">
+<div class="wrap">
+<a class="brand" href="load-balanced-assign-fs-support.html"><img src="assets/load-balanced-assign-fs.svg" alt="" width="32" height="32">Load Balanced Assign for Freshservice</a>
+<nav aria-label="Main">
+<ul>
+<li><a href="load-balanced-assign-fs-support.html" aria-current="page">Support</a></li>
+<li><a href="load-balanced-assign-fs-privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+<li><a href="index.html">All apps</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap">
+<h1>Load Balanced Assign for Freshservice support</h1>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Support is by email only. We aim to reply within 2 business days. Please include your Freshservice domain, the group, a ticket number and a screenshot of what you see. Never send your API key.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<details>
+<summary>Which tickets does the app assign?</summary>
+<p>New service tickets in a group you manage that have no agent yet and are not spam. When you turn on the option, it also assigns a ticket that is moved into a managed group without an agent. It never replaces an agent who is already set.</p>
+</details>
+<details>
+<summary>How does Fewest open pick the agent?</summary>
+<p>It gives the ticket to the available agent with the fewest open and pending tickets. Ties go to the agent with the fewest tickets from the app today, then to your order. Open counts come from Freshservice at each catch-up check, every 5 minutes, and tickets the app assigns in between count right away.</p>
+</details>
+<details>
+<summary>What are the other modes?</summary>
+<p>Round robin gives each new ticket to the next agent in your order. Fewest today gives it to the available agent with the fewest tickets from the app today, and ties go by order. Today's counts reset at midnight in the time zone you choose for the group.</p>
+</details>
+<details>
+<summary>When is an agent skipped?</summary>
+<p>When they are out of queue, outside their shift hours, or at their cap of open and pending tickets. An agent with no shift hours is always on shift, and an empty cap means no cap.</p>
+</details>
+<details>
+<summary>Does the app use the Freshservice availability toggle or work schedules?</summary>
+<p>No. The app uses its own queue switch and shift hours, which you set on the admin page. Under Queue today, select Take out or Put in queue for any agent.</p>
+</details>
+<details>
+<summary>Should I turn off automatic assignment in Freshservice?</summary>
+<p>Yes, for the groups this app manages. Otherwise Freshservice and the app can both assign the same ticket. Go to Admin, Groups, open the group and turn off automatic ticket assignment. The admin page shows a warning for any managed group where it is still on.</p>
+</details>
+<details>
+<summary>Does it replace Assignment Policies or skills routing?</summary>
+<p>No. The app balances new tickets inside a group by open ticket load, with caps and shifts. It does not route by skills, by ticket fields or by agent load weights, and it does not move tickets between groups.</p>
+</details>
+<details>
+<summary>What happens to tickets when nobody is available?</summary>
+<p>They stay unassigned. A catch-up check every 5 minutes assigns waiting tickets, oldest first, as soon as an agent is free. Before it assigns a ticket it reads it again, so a ticket someone assigned by hand in the meantime is left alone.</p>
+</details>
+<details>
+<summary>How many tickets can it assign?</summary>
+<p>About 8 assignments per minute per account, which is set by the Freshworks app storage limits. Tickets above that stay unassigned for a few minutes and are picked up by the catch-up check, up to 5 per check.</p>
+</details>
+<details>
+<summary>Does it use my Freshservice API limit?</summary>
+<p>A little. Each assignment takes a few calls, and the catch-up check counts open tickets for the agents in each rotation. Freshservice limits are account wide (100 calls per minute on Starter), so on Starter with large rotations, use caps only where you need them or keep rotations small.</p>
+</details>
+<details>
+<summary>What if a ticket turns out to be spam or is deleted?</summary>
+<p>If a ticket the app assigned is marked as spam or deleted within a day, the agent gets the turn back and today's count goes down. Merged tickets are not detected and still count.</p>
+</details>
+<details>
+<summary>Can I see who got which ticket and why?</summary>
+<p>Yes. The admin page shows who is next in each group, open counts, today's counts and the recent assignments with the reason for each, and you can download the last 200 as a CSV file. You can also turn on a private note on each assigned ticket that names the agent and the reason.</p>
+</details>
+<details>
+<summary>Does it work with several workspaces?</summary>
+<p>It manages agent groups of the primary workspace.</p>
+</details>
+<details>
+<summary>Why does the app ask for my API key?</summary>
+<p>Everyone signs in once per session with their own Freshservice API key (Profile settings, Your API key). Freshservice confirms who you are, so only admins can see and change the settings. The key is used for that one check and is not stored, and the session ends after 30 minutes.</p>
+</details>
+<details>
+<summary>Who can change the settings?</summary>
+<p>Only Freshservice admins (Account Admin, Admin or another role of the admin type). Role changes apply at the next sign-in.</p>
+</details>
+<details>
+<summary>How do I stop the app for a while?</summary>
+<p>On the admin page, tick "Pause all assignment for now" and save. New tickets stay unassigned until you turn it off. Uninstalling the app removes its catch-up check.</p>
+</details>
+<details>
+<summary>Tickets are not being assigned.</summary>
+<p>Check that the group is ticked under Groups, that its rotation has agents who are in queue, on shift and under their cap, and that assignment is not paused. Then check that the API key in the app settings belongs to an active admin agent, and email us with a ticket number if it continues.</p>
+</details>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<nav aria-label="Footer">
+<ul>
+<li><a href="retention-guard.html">Retention Guard</a></li>
+<li><a href="bulk-update-pro.html">Bulk Update Pro</a></li>
+<li><a href="send-later.html">Send Later</a></li>
+<li><a href="recurring-tickets.html">Recurring Tickets</a></li>
+<li><a href="ticket-checklists.html">Ticket Checklists</a></li>
+<li><a href="privacy-requests.html">Privacy Requests</a></li>
+<li><a href="bulk-update-pro-fs.html">Bulk Update Pro for Freshservice</a></li>
+<li><a href="ticket-approvals.html">Ticket Approvals</a></li>
+<li><a href="app-reviews.html">App Reviews</a></li>
+<li><a href="business-reviews.html">Business Reviews</a></li>
+<li><a href="ticket-snooze.html">Ticket Snooze</a></li>
+<li><a href="csv-ticket-updater.html">CSV Ticket Updater</a></li>
+<li><a href="csv-ticket-creator.html">CSV Ticket Creator</a></li>
+<li><a href="ticket-history-export.html">Ticket History Export</a></li>
+<li><a href="retention-guard-support.html">Retention Guard support</a></li>
+<li><a href="bulk-update-pro-support.html">Bulk Update Pro support</a></li>
+<li><a href="send-later-support.html">Send Later support</a></li>
+<li><a href="recurring-tickets-support.html">Recurring Tickets support</a></li>
+<li><a href="ticket-checklists-support.html">Ticket Checklists support</a></li>
+<li><a href="privacy-requests-support.html">Privacy Requests support</a></li>
+<li><a href="bulk-update-pro-fs-support.html">Bulk Update Pro for Freshservice support</a></li>
+<li><a href="ticket-approvals-support.html">Ticket Approvals support</a></li>
+<li><a href="app-reviews-support.html">App Reviews support</a></li>
+<li><a href="business-reviews-support.html">Business Reviews support</a></li>
+<li><a href="ticket-snooze-support.html">Ticket Snooze support</a></li>
+<li><a href="csv-ticket-updater-support.html">CSV Ticket Updater support</a></li>
+<li><a href="csv-ticket-creator-support.html">CSV Ticket Creator support</a></li>
+<li><a href="ticket-history-export-support.html">Ticket History Export support</a></li>
+<li><a href="kb-review-reminders-support.html">KB Review Reminders support</a></li>
+<li><a href="load-balanced-assign-fs-support.html" aria-current="page">Load Balanced Assign for Freshservice support</a></li>
+<li><a href="retention-guard-privacy.html">Retention Guard privacy</a></li>
+<li><a href="bulk-update-pro-privacy.html">Bulk Update Pro privacy</a></li>
+<li><a href="send-later-privacy.html">Send Later privacy</a></li>
+<li><a href="recurring-tickets-privacy.html">Recurring Tickets privacy</a></li>
+<li><a href="ticket-checklists-privacy.html">Ticket Checklists privacy</a></li>
+<li><a href="privacy-requests-privacy.html">Privacy Requests privacy</a></li>
+<li><a href="bulk-update-pro-fs-privacy.html">Bulk Update Pro for Freshservice privacy</a></li>
+<li><a href="ticket-approvals-privacy.html">Ticket Approvals privacy</a></li>
+<li><a href="app-reviews-privacy.html">App Reviews privacy</a></li>
+<li><a href="business-reviews-privacy.html">Business Reviews privacy</a></li>
+<li><a href="ticket-snooze-privacy.html">Ticket Snooze privacy</a></li>
+<li><a href="csv-ticket-updater-privacy.html">CSV Ticket Updater privacy</a></li>
+<li><a href="csv-ticket-creator-privacy.html">CSV Ticket Creator privacy</a></li>
+<li><a href="ticket-history-export-privacy.html">Ticket History Export privacy</a></li>
+<li><a href="kb-review-reminders-privacy.html">KB Review Reminders privacy</a></li>
+<li><a href="load-balanced-assign-fs-privacy.html">Load Balanced Assign for Freshservice privacy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+</ul>
+</nav>
+<p>Contact: <a href="mailto:joesimo@mail.grokbot.com">joesimo@mail.grokbot.com</a></p>
+<p>Load Balanced Assign for Freshservice is an independent app for Freshservice by Joe Simo. Freshdesk, Freshservice and Freshworks are trademarks of Freshworks Inc. This site is not operated by Freshworks.</p>
+</div>
+</footer>
+</body>
+</html>
